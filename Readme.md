@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Андрей Ясновский](https://up.htmlacademy.ru/adaptive/20/user/1355187).
-* Наставник: [Виктория Никитина].
+* Наставник: [Виктория Никитина] (https://htmlacademy.ru/profile/id1217273).
 
 
 
