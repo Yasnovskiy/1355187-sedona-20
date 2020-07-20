@@ -62,82 +62,83 @@
       </p>
     </section>
 
-    <div>
+    <div class="">
       <form method="get" action="https://echo.htmlacademy.ru">
-        <div class="">
-          <h3>Представьтесь: </h3>
-          <p class="modal-menu-write-input">
-            <label class="" for="__name">Имя*: </label>
-            <input class="" id="__name" type="text" name="name" placeholder="Петр">
+        <div class="present">
+          <h3 class="present__title">Представьтесь: </h3>
+          <p class="present__form">
+            <label class="present__label" for="present__name">Имя*: </label>
+            <input class="present__input" id="present__name" type="text" name="name" placeholder="Петр">
           </p>
-          <p class="modal-menu-write-input">
-            <label class="" for="__surname">Фамилия*: </label>
-            <input class="" id="__surname" type="text" name="surname" placeholder="Иванов">
+          <p class="present__form">
+            <label class="present__label" for="present__surname">Фамилия*: </label>
+            <input class="present__input" id="present__surname" type="text" name="surname" placeholder="Иванов">
           </p>
-          <p class="modal-menu-write-textarea">
-            <label class="" for="__midname">Отчество: </label>
-            <input class="" id="__midname" type="text" name="middle name" placeholder="Александрович">
-          </p>
-        </div>
-
-        <div class="">
-          <h3>Контактная инфомация: </h3>
-          <p class="modal-menu-write-input">
-            <label class="" for="__name">Контактный телефон*: </label>
-            <input class="" id="__name" type="tel" name="tel" placeholder="Введите телефон">
-          </p>
-          <p class="modal-menu-write-input">
-            <label class="" for="__surname">Электронная почта*: </label>
-            <input class="" id="__surname" type="email" name="email" placeholder="Введите e-mail">
+          <p class="present__form">
+            <label class="present__label" for="present__midname">Отчество: </label>
+            <input class="present__input" id="present__midname" type="text" name="middle name" placeholder="Александрович">
           </p>
         </div>
 
-        <div>
-          <h3 class="">Ваше общее впечатление:</h3>
-          <ul class="">
-            <li class="">
-              <input class="visually-hidden" type="radio" name="impression" value="positive" id="positive" checked>
-              <label class="radiobox" for="positive">Скорее положительное</label>
+        <div class="information">
+          <h3 class="information__title">Контактная инфомация: </h3>
+          <p class="information__form">
+            <label class="information__label" for="information__name">Контактный телефон*: </label>
+            <input class="information__input" id="information__name" type="tel" name="tel" placeholder="Введите телефон">
+          </p>
+          <p class="information__form">
+            <label class="information__label" for="information__surname">Электронная почта*: </label>
+            <input class="information__input" id=information"__surname" type="email" name="email" placeholder="Введите e-mail">
+          </p>
+        </div>
+
+        <div class="radio">
+          <h3 class="radio__title">Ваше общее впечатление:</h3>
+          <ul class="radio__list">
+            <li class="radio__item">
+              <input class="visually-hidden radio__input" type="radio" name="impression" value="positive" id="positive" checked>
+              <label class="radio__label" for="positive">Скорее положительное</label>
             </li>
-            <li class="">
-              <input class="visually-hidden" type="radio" name="impression" value="negative" id="negative">
-              <label class="radiobox" for="negative">Скорее отрицательное</label>
+            <li class="radio__item">
+              <input class="visually-hidden radio__input" type="radio" name="impression" value="negative" id="negative">
+              <label class="radio__label" for="negative">Скорее отрицательное</label>
             </li>
-            <li class="">
-              <input class="visually-hidden" type="radio" name="impression" value="difficult" id="difficult">
-              <label class="radiobox" for="difficult">Затрудняюсь ответить</label>
+            <li class="radio__item">
+              <input class="visually-hidden radio__input" type="radio" name="impression" value="difficult" id="difficult">
+              <label class="radio__label" for="difficult">Затрудняюсь ответить</label>
             </li>
           </ul>
         </div>
 
-        <div>
-          <h3 class="">Посещенные достопримечательности:</h3>
-          <ul class="">
-            <li class="">
-              <input class="visually-hidden" type="checkbox" id="bridge" name="sight__bridge" checked>
-              <label class="" for="bridge">Мост Дьявола</label>
+        <div class="check">
+          <h3 class="check__title">Посещенные достопримечательности:</h3>
+          <ul class="check__list">
+            <li class="check__item">
+              <input class="visually-hidden check__input" type="checkbox" id="bridge" name="sight__bridge" checked>
+              <label class="check__label" for="bridge">Мост Дьявола</label>
             </li>
 
-            <li class="">
-              <input class="visually-hidden" type="checkbox" id="mountain" name="sight__mountain" checked>
-              <label class="" for="mountain">Гора-Колокол</label>
+            <li class="check__item">
+              <input class="visually-hidden check__input" type="checkbox" id="mountain" name="sight__mountain" checked>
+              <label class="check__label" for="mountain">Гора-Колокол</label>
             </li>
 
-            <li class="">
-              <input class="visually-hidden" type="checkbox" id="park" name="sight__park" checked>
-              <label class="" for="park">Слайд-парк</label>
+            <li class="check__item">
+              <input class="visually-hidden check__input" type="checkbox" id="park" name="sight__park" checked>
+              <label class="check__label" for="park">Слайд-парк</label>
             </li>
 
-            <li class="">
-              <input class="visually-hidden" type="checkbox" id="rocks" name="sight__rocks">
-              <label class="" for="rocks">Красные скалы</label>
+            <li class="check__item">
+              <input class="visually-hidden check__input" type="checkbox" id="rocks" name="sight__rocks">
+              <label class="check__label" for="rocks">Красные скалы</label>
             </li>
           </ul>
         </div>
 
-        <div class="">
-          <label class="" for="info-field">Опишите свои эмоции:</label>
-          <textarea class="" name="comment" id="info-field" rows="3" placeholder="Опишите подробно все свои восторги"></textarea>
+        <div class="emotions">
+          <h3 class="emotions__title">Опишите свои эмоции:</h3>
+          <label class="emotions__label" for="info-field"></label>
+          <textarea class="emotions__textarea" name="comment" id="info-field" rows="3" placeholder="Опишите подробно все свои восторги"></textarea>
         </div>
 
 
