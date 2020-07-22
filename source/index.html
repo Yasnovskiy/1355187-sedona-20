@@ -4,15 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link  href="css/style.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
-  <header class="page-header">
-    <a class="page-header__logo">
-      <img src="" alt="Логотип">
+  <header class="page-body__header header">
+    <a class="header__logo header-logo">
+      <img class="header-logo__img" src="" alt="Логотип">
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav header__nav">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -43,117 +43,107 @@
     </nav>
   </header>
 
-  <main class="page-main">
+  <main class="page-body__main main">
     <h1 class="visually-hidden"> </h1>
 
-    <section class="main-title">
+    <section class="main__promo promo">
       <h2 class="visually-hidden"></h2>
-      <div class="main-title__block">
-        <p class="main-title__grant">
+      <div class="promo__block">
+        <p class="promo__grant">
           Welcome
         </p>
-        <p class="main-title__to">
+        <p class="promo__to">
           to the gorgeous
         </p>
-        <p class="main-title__sedona">
+        <p class="promo__sedona">
           Sedona
         </p>
-        <p class="main-title__because">
+        <p class="promo__because">
           Because the Grand Canyon sucks!
         </p>
       </div>
     </section>
 
-    <section class="description">
+    <section class="main__description description">
       <h2 class="description__title">
         Седона - небольшой городок в аризоне, заслуживающий большего!
       </h2>
       <p class="description__text">
         Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!
       </p>
-    </section>
-
-    <section class="reason-first">
-      <h2 class="visually-hidden"></h2>
-      <div class="reason-first__block">
-        <h3 class="reason-first__title">
-          Настоящий городок
-        </h3>
-        <p class="reason-first__number">
-          № 1
-        </p>
-        <p class="reason-first__text">
-          Седона ге аттракцион для туристов, так течет своя жизнь
-        </p>
-      </div>
-      <img class="reason-first__img" src="" alt="">
-    </section>
-
-    <section class="advantages">
-      <h2 class="visually-hidden">Премущества</h2>
-      <ul class="advantages__list">
-        <li class="advantages__item">
-          <h3 class="advantages__title">Жилье</h3>
-          <p class="advantages__description">
-            Рекомендуем пожить в настоящем мотеле, все как в кино!
-          </p>
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages__title">Сувениры</h3>
-          <p class="advantages__description">
-            Не только китайского, но и местного производства!
-          </p>
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages__title">Еда</h3>
-          <p class="advantages__description">
-            Всегда заказывайте фирменный бургер, вы не разочаруетесь!
-          </p>
-        </li>
-      </ul>
-    </section>
-
-    <section class="reason-second">
-      <h2 class="visually-hidden"></h2>
-      <img class="reason-second__img" src="" alt="">
-      <div class="reason-second__block">
-        <h3 class="reason-second__title">
-          Там есть мост дьявола
-        </h3>
-        <p class="reason-second__number">
-          № 2
-        </p>
-        <p class="reason-second__text">
-          Да, по нему можно пройти! Если вы осмелитесь, конечно
-        </p>
-      </div>
-    </section>
-
-    <section class="reasons">
-      <h2 class="visually-hidden"></h2>
-      <ul class="reasons__list">
-        <li class="reasons__item">
-          <h3 class="reasons__title">Небольшая площадь</h3>
+      <ul class="description__reasons reasons">
+        <li class="reasons__item reasons__item--blue">
+          <h3 class="reasons__title">
+            Настоящий городок
+          </h3>
           <p class="reasons__number">
-            № 3
+            &mdash; № 1 &mdash;
+          </p>
+          <p class="reasons__text">
+            Седона не аттракцион для туристов, там течет своя жизнь
+          </p>
+          <img src="" alt="" class="reasons__img">
+          <ul class="advantages reasons__advantages">
+            <li class="advantages__item">
+              <h3 class="advantages__title">Жилье</h3>
+              <p class="advantages__description">
+                Рекомендуем пожить в настоящем мотеле, все как в кино!
+              </p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Сувениры</h3>
+              <p class="advantages__description">
+                Не только китайского, но и местного производства!
+              </p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Еда</h3>
+              <p class="advantages__description">
+                Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+              </p>
+            </li>
+          </ul>
+        </li>
+        <li class="reasons__item reasons__item--blue">
+          <h3 class="reasons__title">
+            Там есть мост дьявола
+          </h3>
+          <p class="reasons__number">
+            &mdash; № 2 &mdash;
+          </p>
+          <p class="reasons__text">
+            Да, по нему можно пройти! Если вы осмелитесь, конечно
+          </p>
+          <img src="" alt="" class="reasons__img">
+        </li>
+        <li class="reasons__item">
+          <h3 class="reasons__title">
+            Небольшая площадь
+          </h3>
+          <p class="reasons__number">
+            &mdash; № 3 &mdash;
           </p>
           <p class="reasons__text">
             Все интересные места находятся очень близко
           </p>
         </li>
         <li class="reasons__item">
-          <h3 class="reasons__title">Красивая дорога</h3>
+          <h3 class="reasons__title">
+            Красивая дорога
+          </h3>
           <p class="reasons__number">
-            № 4
+            &mdash; № 4 &mdash;
           </p>
           <p class="reasons__text">
             Ехать в седону из лас-вегаса совсем не скучно!
           </p>
         </li>
         <li class="reasons__item">
-          <h3 class="reasons__title">Мало туристов</h3>
+          <h3 class="reasons__title">
+            Мало туристов
+          </h3>
           <p class="reasons__number">
-            № 5
+            &mdash; № 5 &mdash;
           </p>
           <p class="reasons__text">
             Большинство едет в гранд каньон и толпится там
@@ -161,6 +151,7 @@
         </li>
       </ul>
     </section>
+
 
     <section class="find">
       <h2 class="find__title">
@@ -178,7 +169,7 @@
 
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-body__footer">
     <div class="page-footer__visit visit">
       <b class="visit__text">#visitsedona</b>
     </div>
