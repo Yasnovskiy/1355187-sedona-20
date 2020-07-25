@@ -20,7 +20,7 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a class="site-list__link">
+            <a class="site-list__link" href="index.html">
               Главная
             </a>
           </li>
@@ -30,7 +30,7 @@
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="form.html">
+            <a class="site-list__link">
               Форма отзыва
             </a>
           </li>
@@ -51,9 +51,9 @@
 
     <section class="main__promo promo">
       <h2 class="visually-hidden"></h2>
-      <img class="promo__img" src="./img/text/text-sedona-index.svg" width="282" height="214" alt="">
-
+      <img class="promo__img" src="./img/text/text-sedona.svg" width="229" height="39" alt="">
     </section>
+
     <section class="location-feedback">
       <h2 class="location-feedback__title">
         Оставте свой отзыв
@@ -66,9 +66,9 @@
       </p>
     </section>
 
-    <div class="">
+    <div class="forma">
       <form method="get" action="https://echo.htmlacademy.ru">
-        <div class="present">
+        <div class="forma__present present">
           <h3 class="present__title">Представьтесь: </h3>
           <p class="present__form">
             <label class="present__label" for="present__name">Имя*: </label>
@@ -84,7 +84,7 @@
           </p>
         </div>
 
-        <div class="information">
+        <div class="forma__information information">
           <h3 class="information__title">Контактная инфомация: </h3>
           <p class="information__form">
             <label class="information__label" for="information__name">Контактный телефон*: </label>
@@ -96,7 +96,7 @@
           </p>
         </div>
 
-        <div class="radio">
+        <div class="forma__radio radio">
           <h3 class="radio__title">Ваше общее впечатление:</h3>
           <ul class="radio__list">
             <li class="radio__item">
@@ -114,7 +114,7 @@
           </ul>
         </div>
 
-        <div class="check">
+        <div class="forma__check check">
           <h3 class="check__title">Посещенные достопримечательности:</h3>
           <ul class="check__list">
             <li class="check__item">
@@ -139,43 +139,47 @@
           </ul>
         </div>
 
-        <div class="emotions">
+        <div class="forma__emotions emotions">
           <h3 class="emotions__title">Опишите свои эмоции:</h3>
           <label class="emotions__label" for="info-field"></label>
           <textarea class="emotions__textarea" name="comment" id="info-field" rows="3" placeholder="Опишите подробно все свои восторги"></textarea>
         </div>
-
-
-        <input class="" type="submit" value="Отправить отзыв">
-
+        <button class="forma__button button" type="submit">Отправить отзыв</button>
       </form>
     </div>
-
   </main>
 
 
-  <footer class="page-footer">
-    <div class="page-footer__visit visit">
+  <footer class="page-body__footer footer">
+    <div class="footer__visit visit">
       <b class="visit__text">#visitsedona</b>
     </div>
 
-    <div class="page-footer__social social">
+    <div class="footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Мы в Твитере</span>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+            <span class="visually-hidden">Мы в Фейсбуке</span>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy">
+            <span class="visually-hidden">Мы в Ютубе</span>
+          </a>
         </li>
       </ul>
     </div>
 
-    <div class="page-footer__copyright copyright">
-      <b class="copyright__text">Разработано:</b>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    <div class="footer__copyright copyright">
+      <b class="copyright__text">Разработано</b>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="visually-hidden">HTML Academy</span>
+      </a>
     </div>
   </footer>
 </body>
