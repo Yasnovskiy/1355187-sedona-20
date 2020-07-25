@@ -1,0 +1,76 @@
+.gallery__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.gallery__item {
+  padding: 0;
+  margin: 0;
+}
+
+.gallery__item::before {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #d6d6d6;
+}
+
+.gallery__img {
+  display: block;
+  width: 100%;
+  padding-bottom: 11px;
+  padding-top: 22px;
+}
+
+.gallery__title {
+  padding: 0;
+  margin: 0;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.gallery__author {
+  padding: 0;
+  margin: 0;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.gallery__like {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  padding-bottom: 15px;
+  padding-left: 37px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.gallery__like::after {
+  position: absolute;
+  content: "";
+  display: block;
+  opacity: 0.3;
+  position: absolute;
+  width: 23px;
+  height: 21px;
+  top: 0;
+  left: 0;
+  background: url("../img/icon/icon-like.svg") no-repeat top left;
+}
