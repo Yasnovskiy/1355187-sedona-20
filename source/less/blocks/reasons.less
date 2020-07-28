@@ -1,6 +1,6 @@
 .reasons {
   padding: 0;
-  margin: 0;
+  margin: 0 0 33px;
 }
 
 .reasons__item {
@@ -14,15 +14,17 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  padding-top: 48px;
+  padding-top: 26px;
+  padding-left: 35px;
+  padding-right: 35px;
 
   &::after {
+    padding: 0;
+    margin: 0;
     content: "";
     display: block;
     height: 1px;
     background-color: #d6d6d6;
-    margin-left: 20px;
-    margin-right: 20px;
   }
 }
 
@@ -35,6 +37,7 @@
   color: #ffffff;
   padding: 0;
   margin: 0;
+  padding-top: 39px;
 
   &::after {
     display: none;
@@ -42,7 +45,7 @@
 }
 
 .reasons__item--blue-1 {
-  padding-top: 37px;
+  padding-top: 66px;
   position: relative;
 }
 
@@ -52,10 +55,11 @@
   left: 50%;
   transform: translateX(-50%);
   top: 0;
-  background: url(../img/bg/bg-triangle.svg) no-repeat center top;
+  background: url("../img/bg/bg-triangle.svg") no-repeat center top;
   height: 37px;
   width: 100%;
 }
+
 .reasons__title {
   padding: 0;
   margin: 0;
@@ -64,7 +68,6 @@
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   text-align: center;
-  padding-left: 17px;
   padding-bottom: 11px;
 }
 
@@ -73,7 +76,6 @@
   margin: 0;
   text-align: center;
   color: #333333;
-  padding-left: 17px;
   padding-bottom: 17px;
 }
 
@@ -86,12 +88,17 @@
   margin: 0;
   text-align: center;
   color: #333333;
-  padding-left: 12px;
-  padding-bottom: 39px;
+  padding-bottom: 24px;
 }
 
 .reasons__item--blue .reasons__text {
   color: #ffffff;
+  padding-bottom: 35px;
+}
+
+.reasons__item--blue-1 .reasons__text {
+  color: #ffffff;
+  padding-bottom: 39px;
 }
 
 .reasons__img {
