@@ -1,7 +1,6 @@
 .reasons {
   padding: 0;
-  margin: 0;
-  margin-bottom: 33px;
+  margin: 0 0 33px;
 }
 
 .reasons__item {
@@ -46,7 +45,7 @@
 }
 
 .reasons__item--blue-1 {
-  padding-top: 70px;
+  padding-top: 65px;
   position: relative;
 }
 
@@ -105,4 +104,31 @@
 .reasons__img {
   display: block;
   width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .reasons__item--blue-1::before {
+    background: none;
+  }
+
+  .reasons_wrapper {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    align-items: center;
+  }
+
+  .reasons__item {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    padding-top: 42px;
+
+    &::after {
+      display: none;
+    }
+  }
+
 }
