@@ -1,5 +1,6 @@
 .main-nav {
   position: relative;
+  width: auto;
 }
 
 .main-nav__toggle {
@@ -78,13 +79,36 @@
   }
 }
 
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__wrapper {
+  position: static;
+  min-height: 0;
+}
+
+.main-nav--nojs .site-list__item {
+  display: block;
+}
+
+@media (max-width: @mobile-width-only) {
+
+}
+
+
+
 @media (min-width: @tablet-width) {
+  .main-nav {
+    background: #ffffff;
+
+  }
+
   .main-nav__toggle {
     display: none;
   }
 
   .main-nav__wrapper {
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
+
   }
 }
