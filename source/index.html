@@ -11,8 +11,13 @@
 <body class="page-body">
   <header class="page-body__header header">
     <a class="header__logo header-logo">
-      <img class="header-logo__img" src="./img/logo/logo-sedona-mobile.svg" alt="Логотип">
+      <picture>
+        <source srcset="./img/logo/logo-sedona-desktop.svg" media="(min-width: 1200px)">
+        <source srcset="./img/logo/logo-sedona-tablet.svg" media="(min-width: 768px)">
+        <img class="header-logo__img" src="./img/logo/logo-sedona-mobile.svg" alt="Логотип">
+      </picture>
     </a>
+
     <nav class="main-nav main-nav--opened main-nav--nojs header__nav ">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -50,7 +55,6 @@
     <section class="main__promo promo promo--main">
       <h2 class="visually-hidden"></h2>
       <img class="promo__img" src="./img/text/text-sedona-index.svg" width="282" height="214" alt="">
-
     </section>
 
     <section class="main__description description">
@@ -61,51 +65,69 @@
         Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!
       </p>
       <ul class="description__reasons reasons">
-          <li class="reasons__item reasons__item--blue reasons__item--blue-1">
-            <h3 class="reasons__title">
-              Настоящий городок
-            </h3>
-            <p class="reasons__number">
-              &mdash; №1 &mdash;
-            </p>
-            <p class="reasons__text">
-              Седона не аттракцион для туристов, там течет своя жизнь
-            </p>
-            <img class="reasons__img" src="./img/main/main-city-mobile@1x.jpg" width="320" height="260" alt="">
-        <ul class="advantages reasons__advantages">
-          <li class="advantages__item advantages__item--house">
-            <h3 class="advantages__title ">Жилье</h3>
-            <p class="advantages__description">
-              Рекомендуем пожить в настоящем мотеле, все как в кино!
-            </p>
-          </li>
-          <li class="advantages__item advantages__item--gift">
-            <h3 class="advantages__title">Сувениры</h3>
-            <p class="advantages__description">
-              Не только китайского, но и местного производства!
-            </p>
-          </li>
-          <li class="advantages__item advantages__item--burger">
-            <h3 class="advantages__title">Еда</h3>
-            <p class="advantages__description">
-              Всегда заказывайте фирменный бургер, вы не разочаруетесь!
-            </p>
-          </li>
-        </ul>
+        <li class="reasons__item reasons__item--blue reasons__item--blue-1">
+          <div class="reasons__blocks">
+            <div>
+              <h3 class="reasons__title">
+                Настоящий городок
+              </h3>
+              <p class="reasons__number">
+                &mdash; №1 &mdash;
+              </p>
+              <p class="reasons__text">
+                Седона не аттракцион для туристов, там течет своя жизнь
+              </p>
+            </div>
+            <div>
+              <picture>
+                <source srcset="./img/main/main-city-desktop@1x.jpg" media="(min-width: 1200px)">
+                <source srcset="./img/main/main-city-tablet@1x.jpg" media="(min-width: 768px)">
+                <img class="reasons__img" src="./img/main/main-city-mobile@1x.jpg" width="320" height="260" alt="">
+              </picture>
+            </div>
+          </div>
+          <ul class="advantages reasons__advantages">
+            <li class="advantages__item advantages__item--house">
+              <h3 class="advantages__title ">Жилье</h3>
+              <p class="advantages__description">
+                Рекомендуем пожить в настоящем мотеле, все как в кино!
+              </p>
+            </li>
+            <li class="advantages__item advantages__item--gift">
+              <h3 class="advantages__title">Сувениры</h3>
+              <p class="advantages__description">
+                Не только китайского, но и местного производства!
+              </p>
+            </li>
+            <li class="advantages__item advantages__item--burger">
+              <h3 class="advantages__title">Еда</h3>
+              <p class="advantages__description">
+                Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+              </p>
+            </li>
+          </ul>
         </li>
-        <div>
-          <li class="reasons__item reasons__item--blue">
-            <h3 class="reasons__title">
-              Там есть мост дьявола
-            </h3>
-            <p class="reasons__number">
-              &mdash; №2 &mdash;
-            </p>
-            <p class="reasons__text">
-              Да, по нему можно пройти! Если вы осмелитесь, конечно
-            </p>
-            <img class="reasons__img" src="./img/main/main-bridge-mobile@1x.jpg" width="320" height="260" alt="">
-          </li>
+        <li class="reasons__item reasons__item--blue">
+          <div class="reasons__blocks reasons__blocks--second">
+            <div class="">
+              <h3 class="reasons__title">
+                Там есть мост дьявола
+              </h3>
+              <p class="reasons__number">
+                &mdash; №2 &mdash;
+              </p>
+              <p class="reasons__text">
+                Да, по нему можно пройти! Если вы осмелитесь, конечно
+              </p>
+            </div>
+            <div class="reasons__block--2">
+              <picture>
+                <source srcset="./img/main/main-bridge-desktop@1x.jpg" media="(min-width: 1200px)">
+                <source srcset="./img/main/main-bridge-tablet@1x.jpg" media="(min-width: 768px)">
+                <img class="reasons__img" src="./img/main/main-bridge-mobile@1x.jpg" width="320" height="260" alt="">
+              </picture>
+            </div>
+        </li>
         </div>
         <div class="reasons_wrapper">
           <li class="reasons__item">
@@ -160,6 +182,7 @@
     </div>
 
     <section class="main__map map">
+      <h2 class="visually-hidden"></h2>
       <iframe class="map__iframe"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d840258.2283006022!2d-112.7206456664333!3d34.648168923222904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1595597071756!5m2!1sru!2sru"
         width="320" height="350" allowfullscreen title="Седона">

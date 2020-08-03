@@ -1,9 +1,16 @@
 .hotel {
   padding: 0;
-  margin: 0;
-  margin-bottom: 47px;
+  margin: 0 0 47px;
 }
 
 .hotel__button {
   padding: 14.5px 47px 17.5px;
+}
+
+@media (min-width: @tablet-width) {
+  .hotel__button {
+    padding: 0;
+    width: 458px;
+    min-height: 58px;
+  }
 }
