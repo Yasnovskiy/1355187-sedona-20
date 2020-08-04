@@ -49,7 +49,7 @@
   background: #f2f2f2;
 }
 
-.check__label::after {
+.check__input:checked + .check__label::after {
   position: absolute;
   content: "";
   top: 1px;
@@ -61,3 +61,31 @@
   transform: rotate(-48deg);
   box-sizing: border-box;
 }
+
+.check__input:checked + .check__label:hover::after {
+  border-color: #333333;
+}
+
+.check__input:hover + .check__label:hover::after {
+  border-color: #333333;
+}
+
+.check__input:focus + .check__label::after {
+  border-color: #333333;
+}
+
+.check__input + .check__label:hover::before {
+  background: #e5e5e5;
+  border-color: #e5e5e5;
+}
+
+/*
+.check__input:disabled + .check__label::before {
+ background: #d5d5d5;
+ border-color: #d5d5d5;
+}
+
+.check__input:disabled + .check__label::after{
+ opacity: 0.4;
+}
+*/

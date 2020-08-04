@@ -83,6 +83,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .gallery {
+    display: grid;
+  }
+
   .gallery__list {
     padding-left: 50px;
     padding-right: 50px;
@@ -90,5 +94,15 @@
 
   .gallery__item::before {
     display: none;
+  }
+
+  .gallery__img {
+    padding: 0;
+    margin: 0;
+  }
+
+  .gallery__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
