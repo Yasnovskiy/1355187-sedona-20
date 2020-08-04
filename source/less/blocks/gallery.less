@@ -81,3 +81,14 @@
   left: 0;
   background: url("../img/icon/icon-like.svg") no-repeat top left;
 }
+
+@media (min-width: @tablet-width) {
+  .gallery__list {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .gallery__item::before {
+    display: none;
+  }
+}
