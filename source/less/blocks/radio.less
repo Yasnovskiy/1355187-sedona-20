@@ -50,7 +50,7 @@
   background: #f2f2f2;
 }
 
-.radio__label::after {
+.radio__input:checked + .radio__label::after {
   position: absolute;
   content: "";
   top: 1px;
@@ -60,4 +60,21 @@
   border-radius: 50%;
   background: #333333;
   border: 3px solid #333333;
+}
+
+.radio__input:checked + .radio__label:hover::after {
+  border-color: #333333;
+}
+
+.radio__input:hover + .radio__label:hover::after {
+  border-color: #333333;
+}
+
+.radio__input:focus + .radio__label::after {
+  border-color: #333333;
+}
+
+.radio__input + .radio__label:hover::before {
+  background: #e5e5e5;
+  border-color: #e5e5e5;
 }
