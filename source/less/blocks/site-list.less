@@ -42,10 +42,13 @@
 
 @media (min-width: @tablet-width) {
   .site-list {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+  }
+
+  .site-list__item:hover {
+    background: none;
+    box-shadow: none;
   }
 
   .site-list__link {
@@ -54,5 +57,29 @@
     color: #000000;
     background: #ffffff;
     box-shadow: none;
+  }
+
+  .site-list__link:hover {
+    background: none;
+    box-shadow: none;
+    color: #81b3d2;
+  }
+
+  .site-list__link:active {
+    color: #000000;
+    opacity: 0.3;
+  }
+
+  .site-list__link--active {
+    color: #766357;
+  }
+
+  .site-list__link--active:hover {
+    color: #604E43;
+  }
+
+  .site-list__link--active:active {
+    color: #766357;
+    opacity: 0.3;
   }
 }

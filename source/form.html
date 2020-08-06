@@ -19,7 +19,7 @@
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
+          <li class="site-list__item">
             <a class="site-list__link" href="index.html">
               Главная
             </a>
@@ -30,7 +30,7 @@
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link">
+            <a class="site-list__link site-list__link--active" href="#">
               Форма отзыва
             </a>
           </li>
@@ -142,7 +142,15 @@
           <label class="emotions__label" for="info-field"></label>
           <textarea class="emotions__textarea" name="comment" id="info-field" rows="3" placeholder="Опишите подробно все свои восторги"></textarea>
         </div>
-        <button class="emotions__button button" type="submit">Отправить отзыв</button>
+
+        <div class="">
+        <button class="emotions__button button" type="submit">
+          Отправить отзыв
+        </button>
+        <small class="visually-hidden">
+            * — приведённые данные ложь
+          </small>
+      </div>
       </form>
     </div>
   </main>
