@@ -144,13 +144,13 @@
         </div>
 
         <div class="">
-        <button class="emotions__button button" type="submit">
-          Отправить отзыв
-        </button>
-        <small class="visually-hidden">
+          <button class="emotions__button button" type="submit">
+            Отправить отзыв
+          </button>
+          <small class="visually-hidden">
             * — приведённые данные ложь
           </small>
-      </div>
+        </div>
       </form>
     </div>
   </main>
@@ -194,24 +194,22 @@
     </div>
   </footer>
 
-  <section class="modal">
-    <h2 class="">Ваш отзыв отправлен!</h2>
-    <p class="">
+  <section class="modal modal--shipped">
+    <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+    <p class="modal__text">
       Спасибо за ваше участие, ваш отзыв уже поступил к нам.
       В ближайшее время мы опубликуем его на сайте.
     </p>
-    <div class="">
-      <button class="" type="button">Закрыть окно</button>
+    <div class="modal__block">
+      <button class="modal__button button" type="button">Закрыть окно</button>
     </div>
   </section>
 
 
-  <section class="modal">
-    <h2 class="">Что-то пошло не так!</h2>
-    <p class="">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <div class="">
-      <button class="" type="button">Ок</button>
-    </div>
+  <section class="modal modal--mistake">
+    <h2 class="modal__title">Что-то пошло не так!</h2>
+    <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <button class="modal__button button" type="button">Ок</button>
   </section>
 </body>
 

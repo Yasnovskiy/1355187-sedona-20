@@ -1,3 +1,64 @@
 .modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   display: none;
+  margin: auto;
+  color: @black;
+  background-color: @white;
+  background-position: 0 0;
+  background-repeat: repeat;
+  box-shadow: 0 9px 11px rgba(0, 0, 0, 0.3);
+}
+
+.modal--shipped {
+  top: 120px;
+  bottom: auto;
+  width: 320px;
+  padding-top: 23px;
+}
+
+.modal--mistake {
+  top: 420px;
+  bottom: auto;
+  width: 300px;
+  padding-top: 23px;
+}
+
+.modal__title {
+  margin: 0;
+  padding: 0;
+  font-family: @font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @black;
+}
+
+.modal__text {
+  margin: 0;
+  padding: 0;
+  font-family: @font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @black;
+}
+
+.modal__block {
+  background: @smoky-white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.modal__button {
+  padding: 14px 62px 10px 60px;
 }

@@ -8,7 +8,7 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
+  color: @black;
   padding-bottom: 25px;
 }
 
@@ -31,7 +31,7 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  color: #000000;
+  color: @black;
   position: relative;
   cursor: pointer;
   padding-left: 50px;
@@ -44,9 +44,9 @@
   left: 0;
   width: 48px;
   height: 48px;
-  border: 5px solid #f2f2f2;
+  border: 5px solid @smoky-white;
   box-sizing: border-box;
-  background: #f2f2f2;
+  background: @smoky-white;
 }
 
 .check__input:checked + .check__label::after {
@@ -56,27 +56,27 @@
   left: 12px;
   width: 23.2px;
   height: 16.3px;
-  border-left: 4px solid #000000;
-  border-bottom: 4px solid #000000;
+  border-left: 4px solid @black;
+  border-bottom: 4px solid @black;
   transform: rotate(-48deg);
   box-sizing: border-box;
 }
 
 .check__input:checked + .check__label:hover::after {
-  border-color: #333333;
+  border-color: @light-black;
 }
 
 .check__input:hover + .check__label:hover::after {
-  border-color: #333333;
+  border-color: @light-black;
 }
 
 .check__input:focus + .check__label::after {
-  border-color: #333333;
+  border-color: @light-black;
 }
 
 .check__input + .check__label:hover::before {
-  background: #e5e5e5;
-  border-color: #e5e5e5;
+  background: @smoky-white;
+  border-color: @smoky-white;
 }
 
 /*
