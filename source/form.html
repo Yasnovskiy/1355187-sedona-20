@@ -11,7 +11,11 @@
 <body class="page-body">
   <header class="page-body__header header">
     <a class="header__logo header-logo">
-      <img class="header-logo__img" src="./img/logo/logo-sedona-mobile.svg" alt="Логотип">
+      <picture>
+        <source srcset="./img/logo/logo-sedona-desktop.svg" media="(min-width: 1200px)">
+        <source srcset="./img/logo/logo-sedona-tablet.svg" media="(min-width: 768px)">
+        <img class="header-logo__img" src="./img/logo/logo-sedona-mobile.svg" alt="Логотип">
+      </picture>
     </a>
     <nav class="main-nav main-nav--opened main-nav--nojs header__nav">
       <button class="main-nav__toggle" type="button">
@@ -147,7 +151,7 @@
           <button class="emotions__button button" type="submit">
             Отправить отзыв
           </button>
-          <small class="visually-hidden">
+          <small class="emotions__legend">
             * — приведённые данные ложь
           </small>
         </div>

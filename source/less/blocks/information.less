@@ -9,6 +9,7 @@
   text-align: center;
   text-transform: uppercase;
   color: @black;
+  padding-bottom: 16px;
 }
 
 .information__form {
@@ -26,13 +27,23 @@
   line-height: 26px;
   text-transform: uppercase;
   color: @light-black;
-  padding-right: 10px;
+  padding-left: 22px;
 }
 
 .information__input {
   border: none;
   width: 100%;
-  height: 58px;
   background: @smoky-white;
   color: @black;
+  margin-top: 9px;
+  margin-bottom: 13px;
+  padding-left: 21px;
+  padding-top: 24px;
+  padding-bottom: 18px;
+}
+
+@media (min-width: @tablet-width) {
+  .information__title {
+    font-size: 21px;
+  }
 }
