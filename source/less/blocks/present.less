@@ -1,4 +1,10 @@
+.present {
+  margin-bottom: 27px;
+}
+
 .present__title {
+  padding: 0;
+  margin: 0;
   font-family: @font-family;
   font-style: normal;
   font-weight: bold;
@@ -7,14 +13,15 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  padding-bottom: 21px;
 }
 
 .present__form {
   padding: 0;
   margin: 0;
-  padding-left: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 17px;
   display: flex;
+  align-items: center;
 }
 
 .present__label {
@@ -28,8 +35,7 @@
   line-height: 26px;
   text-transform: uppercase;
   color: #333333;
-  padding-right: 10px;
-  margin-right: 20px;
+  margin-right: 13px;
 }
 
 .present__input {
@@ -38,4 +44,11 @@
   height: 58px;
   background: #f2f2f2;
   color: #000000;
+  padding-left: 22px;
+}
+
+@media (min-width: @tablet-width) {
+  .present__title {
+    font-size: 21px;
+  }
 }

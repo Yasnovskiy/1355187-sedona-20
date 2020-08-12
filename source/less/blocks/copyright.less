@@ -1,8 +1,6 @@
 .copyright {
   padding: 0;
   margin: 0;
-  padding-right: 119px;
-  padding-left: 82px;
 }
 
 .copyright__text {
@@ -15,7 +13,8 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
+  color: @black;
+  padding-right: 37px;
 }
 
 .copyright__link {
@@ -25,7 +24,19 @@
 }
 
 .copyright__svg {
+  position: absolute;
   width: 27px;
   height: 34.1px;
-  fill: #000000;
+  fill: @black;
+  left: -24px;
+  top: -8px;
+}
+
+.copyright__svg:hover {
+  fill: @blue;
+}
+
+.copyright__svg:active {
+  fill: @black;
+  opacity: 0.3;
 }

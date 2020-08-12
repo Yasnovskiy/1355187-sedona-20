@@ -1,3 +1,12 @@
+.location-foto {
+  padding: 0;
+  margin: 0;
+  padding-left: 9px;
+  padding-right: 9px;
+  margin-bottom: 31px;
+  margin-top: 32px;
+}
+
 .location-foto__title {
   padding: 0;
   margin: 0;
@@ -8,7 +17,8 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
+  color: @black;
+  padding-bottom: 28px;
 }
 
 .location-foto__text {
@@ -21,7 +31,27 @@
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
-  color: #333333;
+  color: @light-black;
   padding-left: 14px;
   padding-right: 14px;
+}
+
+@media (min-width: @tablet-width) {
+  .location-foto {
+    padding: 0;
+    width: 458px;
+    min-height: 118px;
+    margin: 0 auto;
+  }
+
+  .location-foto__title {
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+  }
+
+  .location-foto__text {
+    padding: 0;
+    margin: 0;
+  }
 }

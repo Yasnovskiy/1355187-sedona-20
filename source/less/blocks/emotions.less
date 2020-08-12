@@ -1,4 +1,6 @@
 .emotions__title {
+  padding: 0;
+  margin: 0;
   font-family: @font-family;
   font-style: normal;
   font-weight: bold;
@@ -6,7 +8,7 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
+  color: @black;
 }
 
 .emotions__label {
@@ -18,4 +20,33 @@
   height: 160px;
   resize: none;
   margin-bottom: 40px;
+  border: none;
+}
+
+.emotions__button {
+  width: 100%;
+  min-height: 58px;
+}
+
+.emotions__legend {
+  font-family: @font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  align-items: center;
+  text-transform: uppercase;
+  color: @light-black;
+}
+
+@media (max-width: @mobile-width-only) {
+  .emotions__legend {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .emotions__title {
+    font-size: 21px;
+  }
 }
