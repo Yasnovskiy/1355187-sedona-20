@@ -61,8 +61,12 @@ exports.default = gulp.series(
 const images = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
     .pipe(imagemin([
-      imagemin.optipng({optimizationLevel: 3}),
-      imagemin.mozjpeg({progressive: true}),
+      imagemin.optipng({
+        optimizationLevel: 3
+      }),
+      imagemin.mozjpeg({
+        progressive: true
+      }),
       imagemin.svgo()
     ]))
     .pipe(gulp.dest("source/img"))
@@ -72,9 +76,11 @@ exports.images = images;
 
 const webP = () => {
   return gulp.src("source/img/**/*.{jpg,png}")
-    .pipe(webp({quality: 90}))
+    .pipe(webp({
+      quality: 90
+    }))
     .pipe(gulp.dest("source/img"))
- };
+};
 
 exports.webP = webP;
 
@@ -83,7 +89,7 @@ const sprite = () => {
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"))
- };
+};
 
 exports.sprite = sprite;
 
@@ -95,21 +101,21 @@ exports.clean = clean;
 
 const copy = () => {
   return gulp.src([
-    "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
-    "source/js/**",
-    "source/*.ico",
-    "source/*.html"
-  ], {
-    base: "source"
-  })
-  .pipe(gulp.dest("build"))
+      "source/fonts/**/*.{woff,woff2}",
+      "source/img/**",
+      "source/js/**",
+      "source/*.ico",
+      "source/*.html"
+    ], {
+      base: "source"
+    })
+    .pipe(gulp.dest("build"))
 };
 
 exports.copy = copy;
 
 
-const build = () => gulp.series (
+const build = () => gulp.series(
   "clean",
   "copy",
   "css",
