@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport " content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -74,6 +74,10 @@
           <li class="gallery__item">
             <a href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/photo/photo-sunset-desktop@1x.webp 1x, ./img/photo/photo-sunset-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/photo/photo-sunset-tablet@1x.webp 1x, ./img/photo/photo-sunset-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/photo/photo-sunset-mobile@1x.webp 1x, ./img/photo/photo-sunset-mobile@2x.webp 2x">
+
                 <source srcset="./img/photo/photo-sunset-desktop@1x.jpg 1x, ./img/photo/photo-sunset-desktop@2x.jpg 2x" media="(min-width: 1200px)">
                 <source srcset="./img/photo/photo-sunset-tablet@1x.jpg 1x, ./img/photo/photo-sunset-tablet@2x.jpg 2x" media="(min-width: 768px)">
                 <img class="gallery__img" src="./img/photo/photo-sunset-mobile@1x.jpg" srcset="./img/photo/photo-sunset-mobile@2x.jpg 2x" alt="">
@@ -95,6 +99,10 @@
             <li class="gallery__item">
               <a href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="./img/photo/photo-cactus-desktop@1x.webp 1x, ./img/photo/photo-cactus-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/photo/photo-cactus-tablet@1x.webp 1x, ./img/photo/photo-cactus-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/photo/photo-cactus-mobile@1x.webp 1x, ./img/photo/photo-cactus-mobile@2x.webp 2x">
+
                   <source srcset="./img/photo/photo-cactus-desktop@1x.jpg 1x, ./img/photo/photo-cactus-desktop@2x.jpg 2x" media="(min-width: 1200px)">
                   <source srcset="./img/photo/photo-cactus-tablet@1x.jpg 1x, ./img/photo/photo-cactus-tablet@2x.jpg 2x" media="(min-width: 768px)">
                   <img class="gallery__img" src="./img/photo/photo-cactus-mobile@1x.jpg" srcset="./img/photo/photo-cactus-mobile@2x.jpg 2x" alt="">
@@ -115,6 +123,10 @@
             <li class="gallery__item">
               <a href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="./img/photo/photo-roads-desktop@1x.webp 1x, ./img/photo/photo-roads-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/photo/photo-roads-tablet@1x.webp 1x, ./img/photo/photo-roads-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/photo/photo-roads-mobile@1x.webp 1x, ./img/photo/photo-roads-mobile@2x.webp 2x">
+
                   <source srcset="./img/photo/photo-roads-desktop@1xs.jpg 1x, ./img/photo/photo-roads-desktop@2xs.jpg 2x" media="(min-width: 1200px)">
                   <source srcset="./img/photo/photo-roads-tablet@1x.jpg 1x, ./img/photo/photo-roads-tablet@2x.jpg 2x" media="(min-width: 768px)">
                   <img class="gallery__img" src="./img/photo/photo-roads-mobile@1x.jpg" srcset="./img/photo/photo-roads-mobile@2x.jpg 2x" alt="">
@@ -135,8 +147,12 @@
             <li class="gallery__item">
               <a href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="./img/photo/photo-bridge-desktop@1x.webp 1x, ./img/photo/photo-bridge-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/photo/photo-bridge-tablet@1x.webp 1x, ./img/photo/photo-bridge-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/photo/photo-bridge-mobile@1x.webp 1x, ./img/photo/photo-bridge-mobile@2x.webp 2x">
+
                   <source srcset="./img/photo/photo-bridge-desktop@1x.jpg 1x, ./img/photo/photo-bridge-desktop@2x.jpg 2x" media="(min-width: 1200px)">
-                  <source srcset="./img/photo/photo-bridge-tablet@1x.jpg 1x, ./img/photo/photo-bridge-tablet@2x.jpg 2x," media="(min-width: 768px)">
+                  <source srcset="./img/photo/photo-bridge-tablet@1x.jpg 1x, ./img/photo/photo-bridge-tablet@2x.jpg 2x" media="(min-width: 768px)">
                   <img class="gallery__img" src="./img/photo/photo-bridge-mobile@1x.jpg" srcset="./img/photo/photo-bridge-mobile@2x.jpg 2x" alt="">
                 </picture>
               </a>
@@ -165,8 +181,12 @@
         пока они не подорожали в очередной раз!
       </p>
       <picture>
-        <source srcset="./img//video/video-desktop@1x.jpg 1x, ./img//video/video-desktop@2x.jpg 2x" media="(min-width: 1200px)">
-        <source srcset="./img//video/video-tablet@1x.jpg 1x, ./img//video/video-tablet@2x.jpg 2x," media="(min-width: 768px)">
+        <source type="image/webp" media="(min-width: 1200px)" srcset="./img/video/video-desktop@1x.webp 1x, ./img/video/video-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="./img/video/video-tablet@1x.webp 1x, ./img/video/video-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="./img/video/video-mobile@1x.webp 1x, ./img/video/video-mobile@2x.webp 2x">
+
+        <source srcset="./img/video/video-desktop@1x.jpg 1x, ./img/video/video-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+        <source srcset="./img/video/video-tablet@1x.jpg 1x, ./img/video/video-tablet@2x.jpg 2x" media="(min-width: 768px)">
         <img class="view__img" src="./img/video/video-mobile@1x.jpg" srcset="./img/video/video-mobile@2x.jpg 2x" alt="">
       </picture>
     </secton>
