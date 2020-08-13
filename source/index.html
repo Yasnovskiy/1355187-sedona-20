@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport " content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -82,9 +82,13 @@
             </div>
             <div>
               <picture>
-                <source srcset="./img/main/main-city-desktop@1x.jpg" media="(min-width: 1200px)">
-                <source srcset="./img/main/main-city-tablet@1x.jpg" media="(min-width: 768px)">
-                <img class="reasons__img" src="./img/main/main-city-mobile@1x.jpg" width="320" height="260" alt="">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/main/main-city-desktop@1x.webp 1x, ./img/main/main-city-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/main/main-city-tablet@1x.webp 1x, ./img/main/main-city-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/main/main-city-mobile@1x.webp 1x, ./img/main/main-city-mobile@2x.webp 2x">
+
+                <source srcset="./img/main/main-city-desktop@1x.jpg 1x, ./img/main/main-city-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./img/main/main-city-tablet@1x.jpg 1x, ./img/main/main-city-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                <img class="reasons__img" src="./img/main/main-city-mobile@1x.jpg" srcset="./img/main/main-city-mobile@2x.jpg 2x" alt="">
               </picture>
             </div>
           </div>
@@ -124,9 +128,13 @@
             </div>
             <div class="reasons__block--2">
               <picture>
-                <source srcset="./img/main/main-bridge-desktop@1x.jpg" media="(min-width: 1200px)">
-                <source srcset="./img/main/main-bridge-tablet@1x.jpg" media="(min-width: 768px)">
-                <img class="reasons__img" src="./img/main/main-bridge-mobile@1x.jpg" width="320" height="260" alt="">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/main/main-bridge-desktop@1x.webp 1x, ./img/main/main-bridge-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/main/main-bridge-tablet@1x.webp 1x, ./img/main/main-bridge-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/main/main-bridge-mobile@1x.webp 1x, ./img/main/main-bridge-mobile@2x.webp 2x">
+
+                <source srcset="./img/main/main-bridge-desktop@1x.jpg 1x, ./img/main/main-bridge-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./img/main/main-bridge-tablet@1x.jpg 1x, ./img/main/main-bridge-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                <img class="reasons__img" src="./img/main/main-bridge-mobile@1x.jpg" srcset="./img/main/main-bridge-mobile@2x.jpg 2x" alt="">
               </picture>
             </div>
         </li>
