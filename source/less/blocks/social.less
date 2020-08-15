@@ -1,4 +1,6 @@
 .social {
+  display: flex;
+  justify-content: center;
   padding-bottom: 44px;
 }
 
@@ -23,27 +25,25 @@
   color: inherit;
 }
 
-.social__link::after {
+.social__svg {
   content: "";
   display: block;
+  fill: #ffffff;
 }
 
-.social__link--twitter::after {
+.social__svg--twitter {
   width: 17.5px;
   height: 14.6px;
-  background: url("../img/icon/icon-twitter.svg") no-repeat;
 }
 
-.social__link--facebook::after {
+.social__svg--facebook {
   width: 8.7px;
   height: 18.9px;
-  background: url("../img/icon/icon-facebook.svg") no-repeat;
 }
 
-.social__link--youtube::after {
+.social__svg--youtube {
   width: 19.91px;
   height: 14px;
-  background: url("../img/icon/icon-youtube.svg") no-repeat;
 }
 
 .social__item:active {
