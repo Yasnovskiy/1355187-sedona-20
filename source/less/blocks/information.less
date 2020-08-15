@@ -8,7 +8,13 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
+  color: @black;
+  padding-bottom: 16px;
+}
+
+.information__form {
+  padding: 0;
+  margin: 0;
 }
 
 .information__form {
@@ -25,15 +31,24 @@
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
-  color: #333333;
-  padding-right: 10px;
+  color: @light-black;
+  padding-left: 22px;
 }
 
 .information__input {
   border: none;
-  width: calc(100% - 20px);
-  height: 58px;
-  background: #f2f2f2;
-  color: #000000;
-  margin-left: 10px;
+  width: 100%;
+  background: @smoky-white;
+  color: @black;
+  margin-top: 9px;
+  margin-bottom: 13px;
+  padding-left: 21px;
+  padding-top: 24px;
+  padding-bottom: 18px;
+}
+
+@media (min-width: @tablet-width) {
+  .information__title {
+    font-size: 21px;
+  }
 }

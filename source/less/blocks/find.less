@@ -1,5 +1,5 @@
 .find {
-  background: #ffffff;
+  background: @white;
   padding-left: 25px;
   padding-right: 25px;
   margin-bottom: 28px;
@@ -15,7 +15,7 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
+  color: @black;
   padding-bottom: 21px;
 }
 
@@ -29,5 +29,17 @@
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
-  color: #333333;
+  color: @light-black;
+}
+
+@media (min-width: @tablet-width) {
+  .find {
+    width: 435px;
+    min-height: 107px;
+    margin: 0 auto;
+  }
+
+  .find__title {
+    font-size: 30px;
+  }
 }

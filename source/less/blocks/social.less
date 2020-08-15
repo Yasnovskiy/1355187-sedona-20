@@ -1,5 +1,5 @@
 .social {
-  padding-bottom: 28px;
+  padding-bottom: 44px;
 }
 
 .social__list {
@@ -19,7 +19,7 @@
   list-style: none;
   width: 46px;
   height: 48px;
-  background: #81b3d2;
+  background: @blue;
   color: inherit;
 }
 
@@ -44,4 +44,18 @@
   width: 19.91px;
   height: 14px;
   background: url("../img/icon/icon-youtube.svg") no-repeat;
+}
+
+.social__item:active {
+  background: #5496bd;
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.social__link:hover {
+  background: #669ec0;
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.social__link:active {
+  opacity: 0.3;
 }
