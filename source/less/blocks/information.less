@@ -27,21 +27,36 @@
   line-height: 26px;
   text-transform: uppercase;
   color: @light-black;
-  padding-left: 22px;
 }
 
 .information__input {
   border: none;
   width: 100%;
-  background: @smoky-white;
-  color: @black;
-  margin-top: 9px;
-  margin-bottom: 13px;
-  padding-left: 21px;
-  padding-top: 24px;
-  padding-bottom: 18px;
+  height: 58px;
+  background: #f2f2f2;
+  color: #000000;
 }
 
+.information__input:hover {
+  background: #E5E5E5;
+}
+
+.information__input:focus {
+  background: #FFFFFF;
+  border: 4px solid #E5E5E5;
+  box-sizing: border-box;
+  mix-blend-mode: normal;
+  outline: none;
+}
+
+.information__input::placeholder {
+  font-family: @font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
 @media (min-width: @tablet-width) {
   .information__title {
     font-size: 21px;
