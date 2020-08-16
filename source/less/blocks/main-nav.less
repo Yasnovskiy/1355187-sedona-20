@@ -13,14 +13,6 @@
   border: none;
 }
 
-
-.main-nav--closed .main-nav__toggle {
-  top: 226px;
-  right: 0;
-  left: auto;
-  background: #ffffff;
-}
-
 .main-nav--closed {
   height: 50px;
   width: 60px;
@@ -35,7 +27,7 @@
 
 .main-nav--closed .main-nav__toggle {
   top: 0;
-  right: 0;
+  right: -20px;
   background: @white;
 }
 
@@ -53,7 +45,6 @@
 .main-nav--closed .main-nav__toggle:active::before {
   background-color: fade(@blue, 30%);
   box-shadow: 0 8px 0 0 fade(@blue, 30%), 0 16px 0 0 fade(@blue, 30%);
-
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -61,7 +52,7 @@
   right: 9px;
   left: auto;
   background: @blue;
-  
+
   &::after,
   &::before {
     content: "";

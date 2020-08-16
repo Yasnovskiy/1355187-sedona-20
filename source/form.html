@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport " content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <title>HTML Academy: Седона</title>
   <link href="css/style.min.css" rel="stylesheet">
 </head>
@@ -70,7 +71,7 @@
 
     <div class="form">
       <form method="get" action="https://echo.htmlacademy.ru">
-        <div class="form__present present">
+        <div class="form__block  present">
           <h3 class="present__title">Представьтесь: </h3>
           <p class="present__form">
             <label class="present__label" for="present__name">Имя*: </label>
@@ -86,7 +87,7 @@
           </p>
         </div>
 
-        <div class="forma__information information">
+        <div class="form__block information">
           <h3 class="information__title">Контактная информация:</h3>
           <p class="information__form">
             <label class="information__label" for="information__name">Контактный телефон*: </label>
@@ -98,7 +99,7 @@
           </p>
         </div>
 
-        <div class="forma__radio radio">
+        <div class="form__block form__radio radio">
           <h3 class="radio__title">Ваше общее впечатление:</h3>
           <ul class="radio__list">
             <li class="radio__item">
@@ -116,7 +117,7 @@
           </ul>
         </div>
 
-        <div class="forma__check check">
+        <div class="form__block forma__check check">
           <h3 class="check__title">Посещенные достопримечательности:</h3>
           <ul class="check__list">
             <li class="check__item">
@@ -141,13 +142,11 @@
           </ul>
         </div>
 
-        <div class="forma__emotions emotions">
+        <div class="form__block forma__emotions emotions">
           <h3 class="emotions__title">Опишите свои эмоции:</h3>
           <label class="emotions__label" for="info-field"></label>
           <textarea class="emotions__textarea" name="comment" id="info-field" rows="3" placeholder="Опишите подробно все свои восторги"></textarea>
-        </div>
 
-        <div class="">
           <button class="emotions__button button" type="submit">
             Отправить отзыв
           </button>
