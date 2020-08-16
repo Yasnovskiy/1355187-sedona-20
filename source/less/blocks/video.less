@@ -36,6 +36,7 @@
 .video__img {
   display: block;
   width: 100%;
+  position: absolute;
 }
 
 .video__svg {
@@ -58,6 +59,40 @@
   width: 20px;
   height: 20px;
 }
+
+.range-controls {
+  position: relative;
+  height: 24px;
+  padding-top: 21px;
+  padding-right: 22px;
+  padding-left: 22px;
+  background: #000000;
+  opacity: 0.6;
+  margin-top: 156px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.scale {
+  height: 3px;
+  background: #ffffff;
+  opacity: 0.2;
+}
+
+.toggle {
+  position: absolute;
+  top: 18px;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 4px solid #ffffff;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+
 @media (min-width: @tablet-width) {
   .video {
     margin: 0;

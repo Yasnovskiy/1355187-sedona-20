@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport " content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <title>HTML Academy: Седона</title>
   <link href="css/style.min.css" rel="stylesheet">
 </head>
@@ -83,18 +84,20 @@
                 <img class="gallery__img" src="./img/photo/photo-sunset-mobile@1x.jpg" srcset="./img/photo/photo-sunset-mobile@2x.jpg 2x" alt="">
               </picture>
             </a>
-            <h3 class="gallery__title">
-              Неродные просторы
-            </h3>
-            <p class="gallery__author">
-              Автор фото: Борис
-            </p>
-            <p class="gallery__like">
-              <svg class="gallery__svg">
-                <use xlink:href="img/sprite.svg#icon-like"></use>
-              </svg>
-              1350
-            </p>
+            <div class="gallery__blocks">
+              <h3 class="gallery__title">
+                Неродные просторы
+              </h3>
+              <p class="gallery__author">
+                Автор фото: Борис
+              </p>
+              <p class="gallery__like">
+                <svg class="gallery__svg">
+                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                </svg>
+                1350
+              </p>
+            </div>
           </li>
         </div>
         <li class="gallery__item">
@@ -172,10 +175,10 @@
             254
           </p>
         </li>
-      </div>
     </div>
-  </ul>
-</div>
+    </div>
+    </ul>
+    </div>
 
     <secton class="video">
       <div class="video__block">
@@ -196,6 +199,12 @@
         <source srcset="./img/video/video-tablet@1x.jpg 1x, ./img/video/video-tablet@2x.jpg 2x" media="(min-width: 768px)">
         <img class="video__img" src="./img/video/video-mobile@1x.jpg" srcset="./img/video/video-mobile@2x.jpg 2x" alt="">
       </picture>
+      <div class="range-controls">
+        <div class="scale">
+          <div class="bar" style="width: 70%; margin-left: 10%;"></div>
+        </div>
+        <div class="toggle toggle-min" tabindex="0" style="left: 58px;"></div>
+      </div>
       <svg class="video__svg video__svg--subtitles">
         <use xlink:href="img/sprite.svg#icon-video-subtitles"></use>
       </svg>
