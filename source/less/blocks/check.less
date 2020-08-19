@@ -67,7 +67,7 @@
   box-sizing: border-box;
 }
 
-.check__input:checked + .check__label:hover::after {
+.check__label:checked + .check__label:hover::after {
   border-color: @light-black;
 }
 
@@ -75,24 +75,20 @@
   border-color: @light-black;
 }
 
-.check__input:focus + .check__label::after {
-  border-color: @light-black;
+.check__input:active + .check__label:hover::after {
+  border-color: rgba(@light-black, 0.3);
 }
 
 .check__input + .check__label:hover::before {
-  background: @smoky-white;
-  border-color: @smoky-white;
-}
-/*
-.check__input:disabled + .check__label::before {
- background: #d5d5d5;
- border-color: #d5d5d5;
+  background: @light-grey;
+  border-color: @light-grey;
 }
 
-.check__input:disabled + .check__label::after{
- opacity: 0.4;
+.check__input + .check__label:active::before {
+  background: #d5d5d5;
+  border-color: #d5d5d5;
 }
-*/
+
 
 @media (min-width: @tablet-width) {
   .check__title {

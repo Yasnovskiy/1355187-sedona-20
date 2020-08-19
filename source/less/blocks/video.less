@@ -57,26 +57,37 @@
   position: relative;
   display: block;
   fill: #5c6870;
+  cursor: pointer;
+}
+
+.video__svg:hover {
+  fill: #333333;
+}
+
+.video__svg:active {
+  fill: rgba(51, 51, 51, 0.3);
 }
 
 .video__svg--subtitles {
   width: 32px;
   height: 20px;
-  right: -174px;
+  left: 55.2%;
+  transform: translateX(59%);
   top: 23px;
 }
 
 .video__svg--replay {
   width: 16px;
   height: 20px;
-  right: -25px;
+  left: 9%;
   top: 2px;
 }
 
 .video__svg--fullscreen {
   width: 20px;
   height: 20px;
-  right: -237px;
+  left: 78.5%;
+  transform: translateX(83%);
   top: -17px;
 }
 
@@ -104,7 +115,7 @@
 .toggle {
   position: absolute;
   top: 18px;
-  left: 0;
+  left: 58px;
   width: 1px;
   height: 1px;
   padding: 0;
@@ -118,12 +129,13 @@
 @media (min-width: @tablet-width) {
   .video {
     margin: 0;
+    padding-bottom: 41px;
   }
 
   .video__block {
     width: 445px;
     min-height: 119px;
-    margin: 0 auto;
+    margin: 0 auto 68px;
   }
 
   .video__text {
@@ -143,11 +155,57 @@
   }
 
   .video__player {
+    height: 92px;
     margin-bottom: 0;
     background: transparent;
+    left: 60px;
+    width: calc(100% - 120px);
   }
 
   .range-controls {
     transform: translateY(0);
+    height: 42px;
+    padding: 33px 20px 17px;
+  }
+
+  .scale {
+    max-width: 540px;
+    margin-top: 11px;
+    margin-left: 73px;
+    margin-right: 145px;
+  }
+
+  .toggle {
+    top: 41px;
+    left: 206px;
+  }
+
+  .video__svg {
+    fill: #ffffff;
+  }
+
+  .video__svg:hover {
+    fill: rgba(255, 255, 255, 0.6);
+  }
+
+  .video__svg:active {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+
+  .video__svg--subtitles {
+    left: 77.2%;
+    transform: translateX(74%);
+    top: 36px;
+  }
+
+  .video__svg--replay {
+    left: 5.2%;
+    top: 14px;
+  }
+
+  .video__svg--fullscreen {
+    left: 88%;
+    transform: translateX(83%);
+    top: -4px;
   }
 }
