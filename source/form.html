@@ -70,87 +70,96 @@
     </section>
 
     <div class="form">
-      <form method="get" action="https://echo.htmlacademy.ru">
-        <div class="">
-        <div class="form__block  present">
-          <h3 class="present__title">Представьтесь: </h3>
-          <p class="present__form">
-            <label class="present__label" for="present__name">Имя*: </label>
-            <input class="present__input" id="present__name" type="text" name="name" placeholder="Петр">
-          </p>
-          <p class="present__form">
-            <label class="present__label" for="present__surname">Фамилия*: </label>
-            <input class="present__input" id="present__surname" type="text" name="surname" placeholder="Иванов">
-          </p>
-          <p class="present__form">
-            <label class="present__label" for="present__midname">Отчество: </label>
-            <input class="present__input" id="present__midname" type="text" name="middle name" placeholder="Александрович">
-          </p>
-        </div>
+      <form method="post" action="https://echo.htmlacademy.ru">
+        <div class="form__blocks">
+          <div class="form__block  present">
+            <h3 class="present__title">Представьтесь: </h3>
+            <p class="present__form">
+              <label class="present__label" for="present__name">Имя*: </label>
+              <input class="present__input" id="present__name" type="text" name="name" placeholder="Петр">
+            </p>
+            <p class="present__form">
+              <label class="present__label" for="present__surname">Фамилия*: </label>
+              <input class="present__input" id="present__surname" type="text" name="surname" placeholder="Иванов">
+            </p>
+            <p class="present__form">
+              <label class="present__label" for="present__midname">Отчество: </label>
+              <input class="present__input" id="present__midname" type="text" name="middle name" placeholder="Александрович">
+            </p>
+          </div>
 
-        <div class="form__block information">
-          <h3 class="information__title">Контактная информация:</h3>
-          <p class="information__form">
-            <label class="information__label" for="information__name">Контактный телефон*: </label>
-            <input class="information__input" id="information__name" type="tel" name="tel" placeholder="Введите телефон">
-            <span  class="information__span">
-            <svg class="information__svg information__svg--phone">
-              <use xlink:href="img/sprite.svg#icon-phone"></use>
-            </svg>
-            </span>
-          </p>
-          <p class="information__form">
-            <label class="information__label" for="information__surname">Электронная почта*: </label>
-            <input class="information__input" id=information"__surname" type="email" name="email" placeholder="Введите e-mail">
-            <span  class="information__span">
-            <svg class="information__svg information__svg--mail">
-              <use xlink:href="img/sprite.svg#icon-mail"></use>
-            </svg>
-          </span>
-          </p>
-        </div>
+          <div class="form__block information">
+            <h3 class="information__title">Контактная информация:</h3>
+            <div>
+            <p class="information__form">
+              <label class="information__label" for="information__name"> Контактный телефон*: </label>
+              <input class="information__input" id="information__name" type="tel" name="tel" placeholder="Введите телефон" pattern="[0-9]{1}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+              <span class="information__span">
+                <svg class="information__svg information__svg--phone">
+                  <use xlink:href="img/sprite.svg#icon-phone"></use>
+                </svg>
+              </span>
+            </p>
+            <p class="information__form">
+              <label class="information__label" for="information__surname">Электронная почта*: </label>
+              <input class="information__input" id=information"__surname" type="email" name="email" placeholder="Введите e-mail">
+              <span class="information__span">
+                <svg class="information__svg information__svg--mail">
+                  <use xlink:href="img/sprite.svg#icon-mail"></use>
+                </svg>
+              </span>
+            </p>
+          </div>
+          </div>
 
-        <div class="form__block form__radio radio">
-          <h3 class="radio__title">Ваше общее впечатление:</h3>
-          <ul class="radio__list">
-            <li class="radio__item">
-              <input class="visually-hidden radio__input" type="radio" name="impression" value="positive" id="positive" checked>
-              <label class="radio__label" for="positive">Скорее положительное</label>
-            </li>
-            <li class="radio__item">
-              <input class="visually-hidden radio__input" type="radio" name="impression" value="negative" id="negative">
-              <label class="radio__label" for="negative">Скорее отрицательное</label>
-            </li>
-            <li class="radio__item">
-              <input class="visually-hidden radio__input" type="radio" name="impression" value="difficult" id="difficult">
-              <label class="radio__label" for="difficult">Затрудняюсь ответить</label>
-            </li>
-          </ul>
+          <div class="form__block form__radio radio">
+            <h3 class="radio__title">Ваше общее впечатление:</h3>
+            <ul class="radio__list">
+              <li class="radio__item">
+                <input class="visually-hidden radio__input" type="radio" name="impression" value="positive" id="positive" checked>
+                <label class="radio__label" for="positive">Скорее положительное</label>
+              </li>
+              <li class="radio__item">
+                <input class="visually-hidden radio__input" type="radio" name="impression" value="negative" id="negative">
+                <label class="radio__label" for="negative">Скорее отрицательное</label>
+              </li>
+              <li class="radio__item">
+                <input class="visually-hidden radio__input" type="radio" name="impression" value="difficult" id="difficult">
+                <label class="radio__label" for="difficult">Затрудняюсь ответить</label>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div class="form__block forma__check check">
           <h3 class="check__title">Посещенные достопримечательности:</h3>
-          <ul class="check__list">
-            <li class="check__item">
-              <input class="visually-hidden check__input" type="checkbox" id="bridge" name="sight__bridge" checked>
-              <label class="check__label" for="bridge">Мост Дьявола</label>
-            </li>
+          <div class="check__block">
+            <ul class="check__list">
 
-            <li class="check__item">
-              <input class="visually-hidden check__input" type="checkbox" id="mountain" name="sight__mountain" checked>
-              <label class="check__label" for="mountain">Гора-Колокол</label>
-            </li>
+                <li class="check__item">
+                  <input class="visually-hidden check__input" type="checkbox" id="bridge" name="sight__bridge" checked>
+                  <label class="check__label" for="bridge">Мост Дьявола</label>
+                </li>
 
-            <li class="check__item">
-              <input class="visually-hidden check__input" type="checkbox" id="park" name="sight__park" checked>
-              <label class="check__label" for="park">Слайд-парк</label>
-            </li>
 
-            <li class="check__item">
-              <input class="visually-hidden check__input" type="checkbox" id="rocks" name="sight__rocks">
-              <label class="check__label" for="rocks">Красные скалы</label>
-            </li>
-          </ul>
+                <li class="check__item">
+                  <input class="visually-hidden check__input" type="checkbox" id="mountain" name="sight__mountain" checked>
+                  <label class="check__label" for="mountain">Гора-Колокол</label>
+                </li>
+
+
+                <li class="check__item">
+                  <input class="visually-hidden check__input" type="checkbox" id="park" name="sight__park" checked>
+                  <label class="check__label" for="park">Слайд-парк</label>
+                </li>
+
+                <li class="check__item">
+                  <input class="visually-hidden check__input" type="checkbox" id="rocks" name="sight__rocks">
+                  <label class="check__label" for="rocks">Красные скалы</label>
+                </li>
+
+            </ul>
+          </div>
         </div>
 
         <div class="form__block forma__emotions emotions">
@@ -158,14 +167,18 @@
           <label class="emotions__label" for="info-field"></label>
           <textarea class="emotions__textarea" name="comment" id="info-field" rows="3" placeholder="Опишите подробно все свои восторги"></textarea>
 
-          <button class="emotions__button button" type="submit">
-            Отправить отзыв
-          </button>
-          <small class="emotions__legend">
-            * — приведённые данные ложь
-          </small>
-        </div>
-      </div>
+          <div class="emotions__blocks">
+            <div class="emotions__first">
+              <button class="emotions__button button" type="submit">
+                Отправить отзыв
+              </button>
+            </div>
+            <div class="emotions__second">
+              <small class="emotions__legend">
+                * — обязательные поля
+              </small>
+            </div>
+          </div>
       </form>
     </div>
   </main>
@@ -235,6 +248,7 @@
     <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
     <button class="modal__button button" type="button">Ок</button>
   </section>
+
 </body>
 
 </html>

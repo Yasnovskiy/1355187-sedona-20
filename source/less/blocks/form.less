@@ -10,11 +10,18 @@
 
 @media (min-width: @tablet-width) {
   .form {
+    display: grid;
+    padding: 0 60px;
     margin-bottom: 60px;
   }
 
   .form__block {
-    padding: 0 60px 0 61px;
+    padding: 0;
     border: none;
+  }
+
+  .form__blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }

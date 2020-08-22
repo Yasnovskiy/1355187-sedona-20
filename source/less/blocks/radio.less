@@ -17,11 +17,16 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  margin-bottom: 42px;
 }
 
 .radio__item {
   padding: 0;
   margin: 0 0 43px;
+}
+
+.radio__item:last-child {
+  margin: 0;
 }
 
 .radio__label {
@@ -81,7 +86,20 @@
 }
 
 @media (min-width: @tablet-width) {
+  .radio {
+    order: -1;
+    border-right: 1px solid red;
+    margin-bottom: 25px;
+  }
+
   .radio__title {
+    padding: 0;
     font-size: 21px;
+    padding-bottom: 73px;
+    text-align: start;
+  }
+
+  .radio__item {
+    margin-bottom: 52px;
   }
 }

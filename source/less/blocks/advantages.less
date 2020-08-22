@@ -68,6 +68,10 @@
   padding-right: 10px;
 }
 
+.advantages__br {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .advantages {
     padding: 0;
@@ -125,10 +129,29 @@
   }
 
   .advantages__description--gift {
-    padding: 0 30px;
+    padding: 0 31px;
   }
 
   .advantages__description--burger {
     padding: 0 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__description {
+    padding: 0 50px;
+    margin: 0;
+  }
+
+  .advantages__description--gift {
+    padding: 0 70px;
+  }
+
+  .advantages__description--burger {
+    padding: 0 50px;
+  }
+
+  .advantages__br {
+    display: block;
   }
 }
