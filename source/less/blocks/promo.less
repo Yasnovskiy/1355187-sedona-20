@@ -8,6 +8,10 @@
   background-size: cover;
   padding-top: 52px;
   padding-bottom: 62px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg/bg-back-mobile@2x.webp");
+  }
 }
 
 .promo::before {
@@ -31,6 +35,10 @@
   padding-top: 90px;
   padding-bottom: 80px;
   margin-bottom: 31px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg/bg-back-mobile@2x.webp");
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -45,6 +53,10 @@
     padding-bottom: 112px;
     padding-top: 94px;
     margin-bottom: 63px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg/bg-back-tablet@2x.webp");
+    }
   }
 
   .promo::before {
@@ -60,9 +72,52 @@
     padding-bottom: 87px;
     padding-top: 77px;
     margin-bottom: 43px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg/bg-back-tablet@2x.webp");
+    }
   }
 
   .promo__img {
     width: 461px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #cccccc;
+    background-image: url("../img/bg/bg-back-desktop@1x.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 116px;
+    padding-top: 103px;
+    margin-bottom: 100px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg/bg-back-desktop@2x.webp");
+    }
+  }
+
+  .promo::before {
+    background: url("../img/bg/bg-intro-triangle-desktop.svg") no-repeat center bottom;
+  }
+
+  .promo--main {
+    background-color: #cccccc;
+    background-image: url("../img/bg/bg-back-desktop@1x.jpg");
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 87px;
+    padding-top: 77px;
+    margin-bottom: 53px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg/bg-back-desktop@2x.webp");
+    }
   }
 }

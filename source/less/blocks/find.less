@@ -32,6 +32,10 @@
   color: @light-black;
 }
 
+.find__br {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .find {
     width: 435px;
@@ -43,5 +47,15 @@
   .find__title {
     font-size: 30px;
     padding-bottom: 33px;
+  }
+
+  .find__br {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .find__text {
+    margin-bottom: 45px;
   }
 }

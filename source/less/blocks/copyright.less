@@ -15,6 +15,7 @@
   text-transform: uppercase;
   color: @black;
   padding-right: 37px;
+  padding-bottom: 16px;
 }
 
 .copyright__link {
@@ -39,4 +40,16 @@
 .copyright__svg:active {
   fill: @black;
   opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    padding-top: 11px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright {
+    margin-right: 122px;
+  }
 }

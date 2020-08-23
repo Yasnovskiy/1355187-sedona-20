@@ -1,14 +1,27 @@
 .form {
-  margin-bottom: 45px;
+  margin-bottom: 77px;
 }
 
 .form__block {
-  padding: 0 20px;
+  padding: 0 21px 0 19px;
   border-top: 1px solid #e5e5e5;
+  margin-bottom: 39px;
 }
 
 @media (min-width: @tablet-width) {
   .form {
+    display: grid;
+    padding: 0 60px;
     margin-bottom: 60px;
+  }
+
+  .form__block {
+    padding: 0;
+    border: none;
+  }
+
+  .form__blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }

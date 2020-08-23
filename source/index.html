@@ -18,7 +18,7 @@
         <img class="header-logo__img" src="./img/logo/logo-sedona-mobile.svg" alt="Логотип">
       </picture>
     </a>
-    <nav class="main-nav main-nav--opened  header__nav">
+    <nav class="main-nav main-nav--opened main-nav--nojs header__nav">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -71,7 +71,6 @@
         </p>
       </div>
 
-
       <ul class="description__reasons reasons">
         <li class="reasons__item reasons__item--blue reasons__item--blue-1">
           <div class="reasons__blocks">
@@ -86,16 +85,7 @@
                 Седона не аттракцион для туристов, там течет своя жизнь
               </p>
             </div>
-            <div>
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/main/main-city-desktop@1x.webp 1x, ./img/main/main-city-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="./img/main/main-city-tablet@1x.webp 1x, ./img/main/main-city-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="./img/main/main-city-mobile@1x.webp 1x, ./img/main/main-city-mobile@2x.webp 2x">
-
-                <source srcset="./img/main/main-city-desktop@1x.jpg 1x, ./img/main/main-city-desktop@2x.jpg 2x" media="(min-width: 1200px)">
-                <source srcset="./img/main/main-city-tablet@1x.jpg 1x, ./img/main/main-city-tablet@2x.jpg 2x" media="(min-width: 768px)">
-                <img class="reasons__img" src="./img/main/main-city-mobile@1x.jpg" srcset="./img/main/main-city-mobile@2x.jpg 2x" alt="">
-              </picture>
+            <div class="reasons__block-img reasons__block-img--city">
             </div>
           </div>
           <ul class="advantages reasons__advantages">
@@ -108,7 +98,7 @@
             <li class="advantages__item advantages__item--gift">
               <h3 class="advantages__title">Сувениры</h3>
               <p class="advantages__description advantages__description--gift">
-                Не только китайского, но и местного производства!
+                Не только китайского,<br class="advantages__br"> но и местного производства!
               </p>
             </li>
             <li class="advantages__item advantages__item--burger">
@@ -121,8 +111,8 @@
         </li>
         <li class="reasons__item reasons__item--blue">
           <div class="reasons__blocks reasons__blocks--second">
-            <div class="reasons__block--blue">
-              <h3 class="reasons__title">
+            <div class="reasons__block--blue reasons__block--blue-2">
+              <h3 class="reasons__title reasons__title--second">
                 Там есть мост дьявола
               </h3>
               <p class="reasons__number">
@@ -132,17 +122,10 @@
                 Да, по нему можно пройти! Если вы осмелитесь, конечно
               </p>
             </div>
-            <div class="reasons__block--2">
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/main/main-bridge-desktop@1x.webp 1x, ./img/main/main-bridge-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="./img/main/main-bridge-tablet@1x.webp 1x, ./img/main/main-bridge-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="./img/main/main-bridge-mobile@1x.webp 1x, ./img/main/main-bridge-mobile@2x.webp 2x">
-
-                <source srcset="./img/main/main-bridge-desktop@1x.jpg 1x, ./img/main/main-bridge-desktop@2x.jpg 2x" media="(min-width: 1200px)">
-                <source srcset="./img/main/main-bridge-tablet@1x.jpg 1x, ./img/main/main-bridge-tablet@2x.jpg 2x" media="(min-width: 768px)">
-                <img class="reasons__img" src="./img/main/main-bridge-mobile@1x.jpg" srcset="./img/main/main-bridge-mobile@2x.jpg 2x" alt="">
-              </picture>
+            <div class="reasons__block-2">
+            <div class="reasons__block-img reasons__block-img--bridge">
             </div>
+          </div>
         </li>
         </div>
         <div class="reasons_wrapper">
@@ -169,7 +152,7 @@
             </p>
           </li>
           <li class="reasons__item reasons__item--fifth">
-            <h3 class="reasons__title">
+            <h3 class="reasons__title ">
               Мало туристов
             </h3>
             <p class="reasons__number">
@@ -188,13 +171,14 @@
         Заинтересовались?
       </h2>
       <p class="find__text">
-        Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+        Укажите предполагаемые даты поездки,<br class="find__br"> и мы покажем вам лучшие предложения гостиниц в седоне
       </p>
     </section>
 
     <div class="hotel">
       <a class="hotel__button button" href="#">Найти гостиницу</a>
     </div>
+
     <section class="main__map map">
       <h2 class="visually-hidden"></h2>
       <iframe class="map__iframe"
