@@ -45,14 +45,16 @@
 
   .site-list__item {
     background: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
-  .site-list__item:nth-child(3) {
+  .site-list__item:nth-child(4n+3) {
     grid-column-start: 4;
     grid-column-end: 4;
   }
 
-  .site-list__item:nth-child(4) {
+  .site-list__item:nth-child(4n+4) {
     grid-column-start: 5;
     grid-column-end: 5;
   }
@@ -63,6 +65,7 @@
   }
 
   .site-list__link {
+    padding: 0;
     font-size: 14px;
     line-height: 26px;
     color: #000000;

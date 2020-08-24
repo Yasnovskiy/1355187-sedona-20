@@ -94,11 +94,15 @@
 .reasons__item--blue .reasons__text {
   color: #ffffff;
   padding-bottom: 35px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .reasons__item--blue-1 .reasons__text {
   color: #ffffff;
   padding-bottom: 40px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .reasons__block-img {
@@ -139,7 +143,7 @@
     background: none;
   }
 
-  .reasons_wrapper {
+  .reasons__wrapper {
     padding: 0;
     margin: 0;
     min-height: 256px;
@@ -184,7 +188,7 @@
   }
 
   .reasons__block-img {
-    height: 256px;
+    height: auto;
     background-repeat: no-repeat;
     background-position: center center;
     background-color: #81b3d2;
@@ -200,6 +204,7 @@
   }
 
   .reasons__block-img--bridge {
+    order: -1;
     background-image: url("../img/main/main-bridge-tablet@1x.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -218,7 +223,6 @@
   }
 
   .reasons__blocks {
-    height: 256px;
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 33.4% 66.6%;
@@ -228,16 +232,12 @@
     grid-template-columns: 66.7% 33.3%;
   }
 
-  .reasons__block-2 {
-    order: -1;
-  }
-
   .reasons__block--blue {
-    padding: 41px 30px 0;
+    padding: 41px 30px 5px;
   }
 
   .reasons__block--blue-2 {
-    padding: 43px 30px 0;
+    padding: 43px 30px 7px;
   }
 }
 
@@ -282,10 +282,10 @@
   }
 
   .reasons__block--blue {
-    padding: 46px 60px 0;
+    padding: 46px 60px 20px;
   }
 
   .reasons__block--blue-2 {
-    padding: 50px 83px 0;
+    padding: 50px 83px 21px;
   }
 }

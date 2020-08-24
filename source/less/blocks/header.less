@@ -12,6 +12,18 @@
   bottom: -32px;
 }
 
+@media (min-width: @tablet-width) {
+  .header {
+    padding-bottom: 0;
+  }
+
+  .header__logo {
+    bottom: auto;
+    z-index: 10;
+    top: 0;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .header {
     max-width: 1200px;

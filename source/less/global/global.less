@@ -1,4 +1,5 @@
 body {
+  font-family: @font-family;
   margin: 0;
   padding: 0;
   background: #ffffff;
@@ -49,4 +50,17 @@ a {
   cursor: pointer;
   display: block;
   margin: 0 auto;
+}
+
+.button:hover {
+  background: #669ec0;
+}
+
+.button:active {
+  background: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button:disabled {
+  background: #e5e5e5;
 }
