@@ -18,10 +18,20 @@
   .form__block {
     padding: 0;
     border: none;
+    margin-bottom: 29px;
   }
 
   .form__blocks {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .form {
+    max-width: 960px;
+    margin: 0 auto;
+    margin-bottom: 65px;
   }
 }

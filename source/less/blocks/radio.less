@@ -87,9 +87,20 @@
 
 @media (min-width: @tablet-width) {
   .radio {
+    position: relative;
     order: -1;
-    border-right: 1px solid red;
-    margin-bottom: 25px;
+    margin-bottom: 45px;
+  }
+
+  .radio::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 3px;
+    display: block;
+    width: 1px;
+    height: 292px;
+    background-color: #d6d6d6;
   }
 
   .radio__title {
@@ -101,5 +112,15 @@
 
   .radio__item {
     margin-bottom: 52px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .radio {
+    margin-bottom: 41px;
+  }
+
+  .radio__title {
+    padding-left: 80px;
   }
 }
