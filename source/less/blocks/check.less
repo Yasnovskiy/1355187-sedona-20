@@ -140,8 +140,18 @@
 @media (min-width: @desktop-width) {
   .check__list {
     max-width: 100%;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 58px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .check__item {
+    padding: 0;
+    margin: 0 0 54px 12px;
+  }
+
+  .check__item:nth-child(4n+1) {
+    margin-left: 0;
   }
 
   .check__title::after {

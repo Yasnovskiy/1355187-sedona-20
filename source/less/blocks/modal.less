@@ -13,6 +13,10 @@
   box-shadow: 0 9px 11px rgba(0, 0, 0, 0.3);
 }
 
+.modal--active {
+  display: block;
+}
+
 .modal--shipped {
   top: 120px;
   bottom: auto;
@@ -21,10 +25,11 @@
 }
 
 .modal--mistake {
-  top: 420px;
+  top: 320px;
   bottom: auto;
-  width: 300px;
-  padding-top: 23px;
+  width: 320px;
+  padding-top: 38px;
+  padding-bottom: 36px;
 }
 
 .modal__title {
@@ -34,15 +39,15 @@
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 30px;
   text-align: center;
   text-transform: uppercase;
   color: @black;
+  padding-bottom: 29px;
 }
 
 .modal__text {
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
   font-family: @font-family;
   font-style: normal;
   font-weight: normal;
@@ -51,6 +56,13 @@
   text-align: center;
   text-transform: uppercase;
   color: @black;
+  padding-bottom: 36px;
+  padding-right: 41px;
+  padding-left: 41px;
+}
+
+.modal__text--mistake {
+  padding-bottom: 22px;
 }
 
 .modal__block {
@@ -60,5 +72,30 @@
 }
 
 .modal__button {
-  padding: 14px 62px 10px 60px;
+  font-size: 18px;
+  padding: 18px 75px 14px 77px;
+}
+
+@media (min-width: @tablet-width) {
+  .modal__title {
+    font-size: 30px;
+  }
+
+  .modal--shipped {
+    width: 640px;
+    padding-top: 40px;
+  }
+
+  .modal--mistake {
+    width: 400px;
+    padding-top: 40px;
+  }
+
+  .modal__button {
+    padding: 14px 130px 10px;
+  }
+
+  .modal__title--mistake {
+    padding: 0 80px 29px;
+  }
 }

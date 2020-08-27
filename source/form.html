@@ -95,7 +95,7 @@
             <div class="information__form">
               <label class="information__label" for="information__name"><span class="information__label--span">Контактный</span> телефон*: </label>
               <div class="information__input-container">
-              <input class="information__input" id="information__name" type="tel" name="tel" placeholder="Введите телефон" pattern="[0-9]{1}[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" required title="Формат: +7(999)9999999">
+              <input class="information__input information__input--position" id="information__name" type="tel" name="tel" placeholder="Введите телефон" pattern="[0-9]{1}[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" required title="Формат: +7(999)9999999">
               <span class="information__span">
                 <svg class="information__svg information__svg--phone">
                   <use xlink:href="img/sprite.svg#icon-phone"></use>
@@ -163,7 +163,6 @@
                   <input class="visually-hidden check__input" type="checkbox" id="rocks" name="sight__rocks">
                   <label class="check__label" for="rocks">Красные скалы</label>
                 </li>
-
             </ul>
 
         </div>
@@ -240,7 +239,7 @@
   <section class="modal modal--shipped">
     <h2 class="modal__title">Ваш отзыв отправлен!</h2>
     <p class="modal__text">
-      Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+      Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>
       В ближайшее время мы опубликуем его на сайте.
     </p>
     <div class="modal__block">
@@ -250,8 +249,8 @@
 
 
   <section class="modal modal--mistake">
-    <h2 class="modal__title">Что-то пошло не так!</h2>
-    <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <h2 class="modal__title modal__title--mistake">Что-то пошло не так!</h2>
+    <p class="modal__text modal__text--mistake">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
     <button class="modal__button button" type="button">Ок</button>
   </section>
 
