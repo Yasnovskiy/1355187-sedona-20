@@ -1,9 +1,34 @@
+.map {
+  position: relative;
+  min-height: 350px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
 .map__iframe {
+  position: relative;
+  z-index: 100;
   display: block;
   width: 100%;
   background-size: cover;
-  margin-bottom: 40px;
   border: none;
+}
+
+.map__link {
+  position: absolute;
+  min-height: 350px;
+  z-index: 10;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.map__img {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 @media (min-width: @tablet-width) {

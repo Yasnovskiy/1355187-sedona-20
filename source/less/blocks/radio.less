@@ -72,12 +72,12 @@
   border-color: #333333;
 }
 
-.radio__input:hover + .radio__label:hover::after {
+.radio__input + .radio__label:hover::after {
   border-color: #333333;
 }
 
-.radio__input:focus + .radio__label::after {
-  border-color: #333333;
+.radio__input:focus + .radio__label::before {
+  border-color: rgba(@light-black, 0.3);
 }
 
 .radio__input + .radio__label:hover::before {
