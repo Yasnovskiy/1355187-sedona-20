@@ -1,10 +1,14 @@
 .modal {
+  display: none;
+}
+
+.modal__content {
+  z-index: 100;
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  display: none;
   margin: auto;
   color: @black;
   background-color: @white;
@@ -13,19 +17,30 @@
   box-shadow: 0 9px 11px rgba(0, 0, 0, 0.3);
 }
 
+.modal::before {
+  content: "";
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
 .modal--active {
   display: block;
 }
 
-.modal--shipped {
+.modal--shipped .modal__content {
   top: 120px;
   bottom: auto;
   width: 320px;
   padding-top: 23px;
 }
 
-.modal--mistake {
-  top: 320px;
+.modal--mistake .modal__content {
+  top: 30%;
   bottom: auto;
   width: 320px;
   padding-top: 38px;
@@ -71,6 +86,11 @@
   padding-bottom: 20px;
 }
 
+.modal__block--transparent {
+  background: transparent;
+  padding: 0;
+}
+
 .modal__button {
   font-size: 18px;
   padding: 18px 75px 14px 77px;
@@ -81,12 +101,12 @@
     font-size: 30px;
   }
 
-  .modal--shipped {
+  .modal--shipped .modal__content {
     width: 640px;
     padding-top: 40px;
   }
 
-  .modal--mistake {
+  .modal--mistake .modal__content {
     width: 400px;
     padding-top: 40px;
   }

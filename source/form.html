@@ -18,7 +18,7 @@
         <img class="header-logo__img" src="./img/logo/logo-sedona-mobile.svg" alt="Логотип">
       </picture>
     </a>
-    <nav class="main-nav main-nav--opened main-nav--nojs header__nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs header__nav">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -40,7 +40,7 @@
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">
+            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">
               Html academy
             </a>
           </li>
@@ -71,51 +71,52 @@
 
 
     <div class="form">
-      <form method="post" action="https://echo.htmlacademy.ru">
+      <form method="post" action="https://echo.htmlacademy.ru" class="form-data">
         <div class="form__blocks">
           <div class="form__block  present">
             <h3 class="present__title">Представьтесь: </h3>
             <p class="present__form">
               <label class="present__label" for="present__name">Имя*: </label>
-              <input class="present__input" id="present__name" type="text" name="name" placeholder="Петр">
+              <input class="present__input present__name required" id="present__name" type="text" name="name" required placeholder="Петр">
             </p>
             <p class="present__form">
               <label class="present__label" for="present__surname">Фамилия*: </label>
-              <input class="present__input" id="present__surname" type="text" name="surname" placeholder="Иванов">
+              <input class="present__input present__surname required" id="present__surname" type="text" name="surname" required placeholder="Иванов">
             </p>
             <p class="present__form">
               <label class="present__label" for="present__midname">Отчество: </label>
-              <input class="present__input" id="present__midname" type="text" name="middle name" placeholder="Александрович">
+              <input class="present__input present__midname" id="present__midname" type="text" name="middle-name" placeholder="Александрович">
             </p>
           </div>
 
           <div class="form__block information">
             <h3 class="information__title">Контактная информация:</h3>
             <div class="information__block">
-            <div class="information__form">
-              <label class="information__label" for="information__name"><span class="information__label--span">Контактный</span> телефон*: </label>
-              <div class="information__input-container">
-              <input class="information__input information__input--position" id="information__name" type="tel" name="tel" placeholder="Введите телефон" pattern="[0-9]{1}[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" required title="Формат: +7(999)9999999">
-              <span class="information__span">
-                <svg class="information__svg information__svg--phone">
-                  <use xlink:href="img/sprite.svg#icon-phone"></use>
-                </svg>
-              </span>
-            </div>
-            </div>
+              <div class="information__form">
+                <label class="information__label" for="information__name"><span class="information__label--span">Контактный</span> телефон*: </label>
+                <div class="information__input-container">
+                  <input class="information__input information__input--position required form-tel" id="information__name" type="tel" name="tel" placeholder="Введите телефон" pattern="\+?[0-9]\([0-9]{3}\)[0-9]{7}" required
+                    title="Формат: +7(999)9999999">
+                  <span class="information__span">
+                    <svg class="information__svg information__svg--phone">
+                      <use xlink:href="img/sprite.svg#icon-phone"></use>
+                    </svg>
+                  </span>
+                </div>
+              </div>
 
-            <div class="information__form">
-              <label class="information__label" for="information__surname">Электронная почта*: </label>
-              <div class="information__input-container">
-              <input class="information__input" id="information__surname" type="email" name="email" placeholder="Введите e-mail" required>
-              <span class="information__span">
-                <svg class="information__svg information__svg--mail">
-                  <use xlink:href="img/sprite.svg#icon-mail"></use>
-                </svg>
-              </span>
+              <div class="information__form">
+                <label class="information__label" for="information__surname">Электронная почта*: </label>
+                <div class="information__input-container">
+                  <input class="information__input form-email required" id="information__surname" type="email" name="email" placeholder="Введите e-mail" required>
+                  <span class="information__span">
+                    <svg class="information__svg information__svg--mail">
+                      <use xlink:href="img/sprite.svg#icon-mail"></use>
+                    </svg>
+                  </span>
+                </div>
+              </div>
             </div>
-            </div >
-          </div>
           </div>
 
           <div class="form__block form__radio radio">
@@ -140,30 +141,30 @@
         <div class="form__block forma__check check">
           <h3 class="check__title">Посещенные<br> достопримечательности:</h3>
 
-            <ul class="check__list">
+          <ul class="check__list">
 
-                <li class="check__item">
-                  <input class="visually-hidden check__input" type="checkbox" id="bridge" name="sight__bridge" checked>
-                  <label class="check__label" for="bridge">Мост Дьявола</label>
-                </li>
-
-
-                <li class="check__item">
-                  <input class="visually-hidden check__input" type="checkbox" id="mountain" name="sight__mountain" checked>
-                  <label class="check__label" for="mountain">Гора-Колокол</label>
-                </li>
+            <li class="check__item">
+              <input class="visually-hidden check__input" type="checkbox" id="bridge" name="sight__bridge" checked>
+              <label class="check__label" for="bridge">Мост Дьявола</label>
+            </li>
 
 
-                <li class="check__item">
-                  <input class="visually-hidden check__input" type="checkbox" id="park" name="sight__park" checked>
-                  <label class="check__label" for="park">Слайд-парк</label>
-                </li>
+            <li class="check__item">
+              <input class="visually-hidden check__input" type="checkbox" id="mountain" name="sight__mountain" checked>
+              <label class="check__label" for="mountain">Гора-Колокол</label>
+            </li>
 
-                <li class="check__item">
-                  <input class="visually-hidden check__input" type="checkbox" id="rocks" name="sight__rocks">
-                  <label class="check__label" for="rocks">Красные скалы</label>
-                </li>
-            </ul>
+
+            <li class="check__item">
+              <input class="visually-hidden check__input" type="checkbox" id="park" name="sight__park" checked>
+              <label class="check__label" for="park">Слайд-парк</label>
+            </li>
+
+            <li class="check__item">
+              <input class="visually-hidden check__input" type="checkbox" id="rocks" name="sight__rocks">
+              <label class="check__label" for="rocks">Красные скалы</label>
+            </li>
+          </ul>
 
         </div>
 
@@ -174,13 +175,13 @@
 
           <div class="emotions__blocks">
 
-              <button class="emotions__button button" type="submit">
-                Отправить отзыв
-              </button>
+            <button class="emotions__button button" type="submit">
+              Отправить отзыв
+            </button>
 
-              <small class="emotions__legend">
-                * — обязательные поля
-              </small>
+            <small class="emotions__legend">
+              * — обязательные поля
+            </small>
 
           </div>
         </div>
@@ -237,23 +238,30 @@
   </footer>
 
   <section class="modal modal--shipped">
-    <h2 class="modal__title">Ваш отзыв отправлен!</h2>
-    <p class="modal__text">
-      Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>
-      В ближайшее время мы опубликуем его на сайте.
-    </p>
-    <div class="modal__block">
-      <button class="modal__button button" type="button">Закрыть окно</button>
+    <div class="modal__content">
+      <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+      <p class="modal__text">
+        Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>
+        В ближайшее время мы опубликуем его на сайте.
+      </p>
+      <div class="modal__block">
+        <button class="modal__button button" type="button">Закрыть окно</button>
+      </div>
     </div>
   </section>
 
 
   <section class="modal modal--mistake">
-    <h2 class="modal__title modal__title--mistake">Что-то пошло не так!</h2>
-    <p class="modal__text modal__text--mistake">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <button class="modal__button button" type="button">Ок</button>
+    <div class="modal__content">
+      <h2 class="modal__title modal__title--mistake">Что-то пошло не так!</h2>
+      <p class="modal__text modal__text--mistake">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <div class="modal__block modal__block--transparent">
+        <button class="modal__button button" type="button">Ок</button>
+      </div>
+    </div>
   </section>
 
+  <script src="./js/document.min.js"></script>
 </body>
 
 </html>

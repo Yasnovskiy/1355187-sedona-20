@@ -75,11 +75,12 @@
   border-color: @light-black;
 }
 
-.check__input:hover + .check__label:hover::after {
+.check__input + .check__label:hover::after {
   border-color: @light-black;
 }
 
-.check__input:active + .check__label:hover::after {
+.check__input:active + .check__label:hover::after,
+.check__input:focus + .check__label::before {
   border-color: rgba(@light-black, 0.3);
 }
 

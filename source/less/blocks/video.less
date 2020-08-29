@@ -52,19 +52,66 @@
   background: #f2f2f2;
 }
 
-.video__svg {
-  content: "";
-  position: relative;
-  display: block;
-  fill: #5c6870;
+.video__controls {
+  position: absolute;
+  width: calc(100% - 40px);
+  height: 24px;
+  transform: translateY(-100%);
+  left: 0;
+  top: 0;
+  background: #000000;
+  opacity: 0.6;
+  padding: 11px 20px 10px;
+}
+
+.video__scale {
+  height: 3px;
+  background: #ffffff;
+  opacity: 0.2;
+  margin-top: 11px;
+  margin-left: 2px;
+  margin-right: 3px;
+}
+
+.video__toggle {
+  position: absolute;
+  top: 18px;
+  left: 58px;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 4px solid #ffffff;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
   cursor: pointer;
 }
 
-.video__svg:hover {
+.video__svg {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.video__svg svg {
+  max-width: 100%;
+  max-height: 100%;
+  fill: #5c6870;
+}
+
+.video__svg:focus {
+  outline: none;
+}
+
+.video__svg:focus svg {
   fill: #333333;
 }
 
-.video__svg:active {
+.video__svg:hover svg {
+  fill: #333333;
+}
+
+.video__svg:active svg {
   fill: rgba(51, 51, 51, 0.3);
 }
 
@@ -89,41 +136,6 @@
   left: 78.5%;
   transform: translateX(83%);
   top: -17px;
-}
-
-.range-controls {
-  position: absolute;
-  width: calc(100% - 40px);
-  height: 24px;
-  transform: translateY(-100%);
-  left: 0;
-  top: 0;
-  background: #000000;
-  opacity: 0.6;
-  padding: 11px 20px 10px;
-}
-
-.scale {
-  height: 3px;
-  background: #ffffff;
-  opacity: 0.2;
-  margin-top: 11px;
-  margin-left: 2px;
-  margin-right: 3px;
-}
-
-.toggle {
-  position: absolute;
-  top: 18px;
-  left: 58px;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  border: 4px solid #ffffff;
-  background-color: #ffffff;
-  border-radius: 50%;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
-  cursor: pointer;
 }
 
 @media (min-width: @tablet-width) {
@@ -164,33 +176,37 @@
     width: calc(100% - 120px);
   }
 
-  .range-controls {
+  .video__controls {
     transform: translateY(0);
     height: 42px;
     padding: 33px 20px 17px;
   }
 
-  .scale {
+  .video__scale {
     max-width: 540px;
     margin-top: 11px;
     margin-left: 73px;
     margin-right: 145px;
   }
 
-  .toggle {
+  .video__toggle {
     top: 41px;
     left: 206px;
   }
 
-  .video__svg {
+  .video__svg svg {
     fill: #ffffff;
   }
 
-  .video__svg:hover {
+  .video__svg:focus svg {
     fill: rgba(255, 255, 255, 0.6);
   }
 
-  .video__svg:active {
+  .video__svg:hover svg  {
+    fill: rgba(255, 255, 255, 0.6);
+  }
+
+  .video__svg:active svg  {
     fill: rgba(255, 255, 255, 0.3);
   }
 
