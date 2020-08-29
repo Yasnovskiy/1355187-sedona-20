@@ -18,7 +18,7 @@
         <img class="header-logo__img" src="./img/logo/logo-sedona-mobile.svg" alt="Логотип">
       </picture>
     </a>
-    <nav class="main-nav main-nav--opened main-nav--nojs header__nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs header__nav">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -40,7 +40,7 @@
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">
+            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">
               Html academy
             </a>
           </li>
@@ -48,7 +48,6 @@
       </div>
     </nav>
   </header>
-
 
 
   <main>
@@ -69,37 +68,37 @@
 
     <div class="gallery">
       <ul class="gallery__list">
-          <li class="gallery__item gallery__block">
-            <a href="#">
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/photo/photo-sunset-desktop@1x.webp 1x, ./img/photo/photo-sunset-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="./img/photo/photo-sunset-tablet@1x.webp 1x, ./img/photo/photo-sunset-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="./img/photo/photo-sunset-mobile@1x.webp 1x, ./img/photo/photo-sunset-mobile@2x.webp 2x">
+        <li class="gallery__item gallery__block">
+          <a href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="./img/photo/photo-sunset-desktop@1x.webp 1x, ./img/photo/photo-sunset-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="./img/photo/photo-sunset-tablet@1x.webp 1x, ./img/photo/photo-sunset-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/photo/photo-sunset-mobile@1x.webp 1x, ./img/photo/photo-sunset-mobile@2x.webp 2x">
 
-                <source srcset="./img/photo/photo-sunset-desktop@1x.jpg 1x, ./img/photo/photo-sunset-desktop@2x.jpg 2x" media="(min-width: 1200px)">
-                <source srcset="./img/photo/photo-sunset-tablet@1x.jpg 1x, ./img/photo/photo-sunset-tablet@2x.jpg 2x" media="(min-width: 768px)">
-                <img class="gallery__img" src="./img/photo/photo-sunset-mobile@1x.jpg" srcset="./img/photo/photo-sunset-mobile@2x.jpg 2x" alt="">
-              </picture>
-            </a>
-            <div class="gallery__info">
-              <div class="gallery__info--1">
-                <h3 class="gallery__title">
-                  Неродные просторы
-                </h3>
-                <p class="gallery__author">
-                  Автор фото: Борис
-                </p>
-              </div>
-              <div class="gallery__info--2 gallery__info--big">
-                <p class="gallery__like">
-                  <svg class="gallery__svg">
-                    <use xlink:href="img/sprite.svg#icon-like"></use>
-                  </svg>
-                  1350
-                </p>
-              </div>
+              <source srcset="./img/photo/photo-sunset-desktop@1x.jpg 1x, ./img/photo/photo-sunset-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+              <source srcset="./img/photo/photo-sunset-tablet@1x.jpg 1x, ./img/photo/photo-sunset-tablet@2x.jpg 2x" media="(min-width: 768px)">
+              <img class="gallery__img" src="./img/photo/photo-sunset-mobile@1x.jpg" srcset="./img/photo/photo-sunset-mobile@2x.jpg 2x" alt="">
+            </picture>
+          </a>
+          <div class="gallery__info">
+            <div class="gallery__info--1">
+              <h3 class="gallery__title">
+                Неродные просторы
+              </h3>
+              <p class="gallery__author">
+                Автор фото: Борис
+              </p>
             </div>
-          </li>
+            <div class="gallery__info--2 gallery__info--big">
+              <p class="gallery__like">
+                <svg class="gallery__svg">
+                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                </svg>
+                1350
+              </p>
+            </div>
+          </div>
+        </li>
         <li class="gallery__item">
           <a href="#">
             <picture>
@@ -218,21 +217,25 @@
           <img class="video__img" src="./img/video/video-mobile@1x.jpg" srcset="./img/video/video-mobile@2x.jpg 2x" alt="">
         </picture>
         <div class="video__player">
-          <div class="range-controls">
-            <div class="scale">
-              <div class="bar" style="width: 70%; margin-left: 10%;"></div>
-            </div>
-            <div class="toggle toggle-min" tabindex="0"></div>
+          <div class="video__controls">
+            <div class="video__scale"></div>
+            <div class="video__toggle" tabindex="0"></div>
           </div>
-          <svg class="video__svg video__svg--subtitles">
-            <use xlink:href="img/sprite.svg#icon-video-subtitles"></use>
-          </svg>
-          <svg class="video__svg video__svg--replay">
-            <use xlink:href="img/sprite.svg#icon-video-replay"></use>
-          </svg>
-          <svg class="video__svg video__svg--fullscreen">
-            <use xlink:href="img/sprite.svg#icon-video-fullscreen"></use>
-          </svg>
+          <a class="video__svg video__svg--subtitles" href="#">
+            <svg>
+              <use xlink:href="img/sprite.svg#icon-video-subtitles"></use>
+            </svg>
+          </a>
+          <a class="video__svg video__svg--replay" href="#">
+            <svg>
+              <use xlink:href="img/sprite.svg#icon-video-replay"></use>
+            </svg>
+          </a>
+          <a class="video__svg video__svg--fullscreen" href="#">
+            <svg>
+              <use xlink:href="img/sprite.svg#icon-video-fullscreen"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </section>
@@ -286,6 +289,8 @@
       </a>
     </div>
   </footer>
+
+  <script src="./js/document.min.js"></script>
 </body>
 
 </html>

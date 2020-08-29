@@ -45,14 +45,18 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  border: 4px solid #f2f2f2;
+  border: 4px solid @smoky-white;
   box-sizing: border-box;
-  background: #f2f2f2;
-  color: #000000;
+  background: @smoky-white;
+  color: @black;
   padding-right: 70px;
   padding-left: 18px;
   margin-top: 8px;
   margin-bottom: 14px;
+}
+
+.error {
+  border-color: red;
 }
 
 .information__input--position {
@@ -60,15 +64,23 @@
 }
 
 .information__input:hover {
-  background: #e5e5e5;
-  border: 4px solid #e5e5e5;
+  background: @light-grey;
+  border: 4px solid @light-grey;
+}
+
+.error:hover {
+  border-color: red;
 }
 
 .information__input:focus {
-  background: #ffffff;
-  border: 4px solid #e5e5e5;
+  background: @white;
+  border: 4px solid @light-grey;
   box-sizing: border-box;
   outline: none;
+}
+
+.error:focus {
+  border-color: red;
 }
 
 .information__input-container {
@@ -77,21 +89,27 @@
 
 .information__span {
   position: absolute;
-  content: "";
   display: block;
   width: 58px;
   height: 58px;
   background: #e6e6e6;
   right: 0;
   top: 0;
+  border-top: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  box-sizing: border-box;
+}
+
+.error + .information__span {
+  border-color: red;
 }
 
 .information__svg {
   position: absolute;
-  content: "";
   display: block;
-  top: 20px;
-  right: 20px;
+  top: 18px;
+  right: 15px;
 }
 
 .information__svg--phone {
@@ -173,7 +191,7 @@
   }
 
   .information__span {
-    top: 9px;
+    top: 8px;
   }
 
   .information__input {
